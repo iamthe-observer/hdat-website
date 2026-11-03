@@ -1,0 +1,20 @@
+# Dependencies & Build Output
+node_modules/
+**/node_modules/
+.nuxt/
+**/.nuxt/
+.output/
+**/.output/
+dist/
+**/dist/
+.nitro/
+**/.nitro/
+.cache/
+**/.cache/
+.env
+.DS_Store
+
+# Private local planning documents (kept local only)
+plan.md
+*.docx
+screenshots/

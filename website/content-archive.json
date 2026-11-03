@@ -1,0 +1,356 @@
+{
+  "_metadata": {
+    "title": "Hon. Dorcas Affo-Toffey Website Content Backup",
+    "description": "Original verified biographical, governance, and project data preserved for restoration.",
+    "savedAt": "2026-11-03T15:10:00Z"
+  },
+  "pinnedStory": {
+    "kicker": "Section 01 // The Arc of Purpose",
+    "headline": "From Tikobo No. 1 to the Halls of Governance",
+    "coordinates": "5.0592° N, 2.6288° W [JOMORO]",
+    "quote": "“I was born the 18th of 23 children in Tikobo No. 1. I know what it means to build resilience with bare hands. Leadership is only legitimate when it brings tangible dignity to every family, farmer, and child.”",
+    "traditionalTitle": "Nkosuo Hemaa of Ahobre No. 1",
+    "attribution": "Hon. Dorcas Affo-Toffey",
+    "subAttribution": "Affectionately named \"Jomoro Anyelazo\"",
+    "credentials": [
+      "MBA (Generic) — Accra Business School (2024)",
+      "BSc & MBA (Marketing) — Knutsford University College",
+      "MSc (Energy & Sustainability Management) — Regent / UCAM (Spain)",
+      "Best Performing Deputy Minister (2026) — 6th Ministers of State Excellence Honours"
+    ],
+    "milestones": [
+      {
+        "number": "Milestone 01 // Foundations",
+        "location": "Tikobo No. 1 & Bonyere",
+        "title": "Roots of Resilience & Cultural Trust",
+        "description": "Raised in the agrarian heartland of Jomoro, Hon. Dorcas attended D/C Primary in Tikobo No. 1 and Nkroful Agriculture Secondary School. Her deep-seated bond with the local chiefs and families earned her the sacred traditional title of Nkosuo Hemaa (Queen of Development) of Ahobre No. 1, alongside the constituent moniker “Jomoro Yaa Asantewaa”.",
+        "tags": ["Ahobre No. 1", "Cultural Enstoolment", "Nzema Heritage"]
+      },
+      {
+        "number": "Milestone 02 // Enterprise",
+        "location": "Atlanta, USA & Accra",
+        "title": "25 Years of Global Corporate Acumen",
+        "description": "Beginning in 2002, she built and managed a diverse portfolio of American and Ghanaian enterprises across real estate, early childhood development, and commercial trading—including Topeka Properties, Kids Smile Inc., and Selfie Homes in Atlanta, before repatriating capital to Ghana through Nano Fix IT and Franlyn Properties.",
+        "tags": ["Real Estate Development", "FDI Inflows", "Executive Management"]
+      },
+      {
+        "number": "Milestone 03 // Patronage",
+        "location": "Community Investments",
+        "title": "Youth Empowerment & Jomoro FC",
+        "description": "Recognizing that youth vitality requires structured economic avenues, she acquired Division One football club Proud United, relocated its headquarters to the constituency, and rebranded it as Jomoro FC—scouting, training, and sponsoring grassroots athletic talent onto the national football stage.",
+        "tags": ["Jomoro FC", "Youth Talent Pipeline", "Sports Economics"]
+      },
+      {
+        "number": "Milestone 04 // Governance",
+        "location": "Parliament & Ministry",
+        "title": "Parliamentary Mandate & Ministerial Impact",
+        "description": "After flipping the Jomoro seat in 2020, she championed the rights of border traders by summoning the Minister of the Interior over the Elubo land border closure. Her executive performance as Deputy Minister of Transport—revitalizing Metro Mass Transit Limited (MMTL) fleet operations and expanding DVLA driver safety—earned her national acclaim as Ghana’s Best Performing Deputy Minister of 2026.",
+        "tags": ["National Transport Policy", "MMTL Fleet Modernization", "Elubo Border Advocacy"]
+      }
+    ]
+  },
+  "aboutPage": {
+    "kicker": "Biography & Mandate",
+    "headline": "The Architecture of a Life Built on Service & Conviction",
+    "subhead": "From rural beginnings in Tikobo No. 1 to corporate enterprise in the United States and the frontline of Ghanaian statecraft.",
+    "traditionalAuthorityBadge": {
+      "title": "Traditional Authority",
+      "name": "Nkosuo Hemaa of Ahobre No. 1",
+      "date": "Enstooled February 1, 2020"
+    },
+    "narrative": {
+      "kicker": "Roots & Traditional Honor",
+      "title": "Anchored in Tikobo No. 1 & Bonyere",
+      "paragraphs": [
+        "Hon. Dorcas Affo-Toffey was born in Tikobo No. 1 and hails from Bonyere in the Jomoro Municipality of Ghana’s Western Region. As the 18th born of her father’s 23 children (the late Stephen Ackah Toffey) and the last child of her mother (the late Mary Afo Danyi), her upbringing in a vibrant, large family forged an instinctive dedication to collective welfare and mutual uplift.",
+        "Her early education took place at D/C Primary School in Tikobo No. 1 and Ideal Preparatory School in Takoradi, before she enrolled at Nkroful Agriculture Secondary School. This deep grounding in rural agriculture instilled an acute awareness of the challenges faced by cocoa, coconut, and cassava farming households.",
+        "In recognition of her proactive developmental work across the municipality, the chiefs and elders of Ahobre No. 1 formally enstooled her as Nkosuo Hemaa (Queenmother of Development) on February 1, 2020. Her constituents affectionately refer to her as “Jomoro Yaa Asantewaa” and “Jomoro Anyelazo” (The Tireless Benefactor)."
+      ]
+    },
+    "enterprise": {
+      "kicker": "Track Record // Acumen",
+      "title": "25 Years of International Enterprise",
+      "cards": [
+        {
+          "tag": "01 // UNITED STATES VENTURES",
+          "title": "Real Estate & Childcare",
+          "text": "Relocating to the United States to join her elder brothers, she established multiple successful commercial enterprises in Atlanta, Georgia—founding Kids Smile Inc. (daycare operations), Topeka Properties (building & construction), and serving as senior partner at Selfie Homes.",
+          "footer": "Atlanta, GA · 2002–2012"
+        },
+        {
+          "tag": "02 // GHANAIAN ENTERPRISE",
+          "title": "Repatriating Capital Home",
+          "text": "Returning to Ghana in 2012, she expanded her entrepreneurial footprint across technology, commercial trading, and property development—serving as CEO and Country Representative for Nano Fix IT Company, Sebastian Closet Inc., and managing Franlyn Properties.",
+          "footer": "Accra & Western Region · 2012–Present"
+        },
+        {
+          "tag": "03 // SPORTS PATRONAGE",
+          "title": "Jomoro FC & Youth Football",
+          "text": "Passionate about channeling youthful vitality into sustainable livelihoods, she acquired Ghana Division One League club Proud United, rebranded it as Jomoro FC, and relocated the franchise to her constituency to nurture young athletic talents for national scouts.",
+          "footer": "Division One League Club Owner"
+        }
+      ]
+    },
+    "academicQualifications": [
+      {
+        "degree": "Master of Business Administration (MBA Generic)",
+        "institution": "Accra Business School (2024)"
+      },
+      {
+        "degree": "MSc in Energy and Sustainability Management",
+        "institution": "Jointly awarded by Regent University College & UCAM (Spain)"
+      },
+      {
+        "degree": "BSc & MBA in Marketing",
+        "institution": "Knutsford University College"
+      },
+      {
+        "degree": "Professional Diplomas (USA)",
+        "institution": "Branding, Customer Service, Real Estate Management & Dental Hygiene"
+      }
+    ]
+  },
+  "initiatives": {
+    "kicker": "Audited Infrastructure & Social Ledger",
+    "headline": "Verified Impact Across Jomoro Communities",
+    "subhead": "Every bridge built, well rehabilitated, mother discharged, and loan disbursed is accompanied by an open paper trail of municipal handovers and verified receipts.",
+    "stats": [
+      { "target": 30, "suffix": "+", "label": "Detained Mothers Relieved", "category": "Maternal Justice" },
+      { "target": 5, "suffix": "", "label": "Agrarian Access Bridges", "category": "Rural Infrastructure" },
+      { "target": 200, "suffix": "+", "label": "Market Women Financed", "category": "Interest-Free Loans" },
+      { "target": 4, "suffix": "", "label": "Schools Supported", "category": "Hygiene & Dignity" }
+    ],
+    "projects": [
+      {
+        "id": 1,
+        "tag": "Healthcare & Maternal",
+        "category": "Healthcare & Maternal",
+        "location": "Half-Assini",
+        "title": "Hospital Emergency Ambulance & Maternity Debt Relief",
+        "description": "Procured and handed over a fully equipped modern ambulance to Half-Assini Government Hospital, while systematically paying off hospital delivery bills for detained mothers.",
+        "verificationStatus": "Fully Handed Over & Documented",
+        "refCode": "DAT-MED-001",
+        "beneficiaries": "Expectant mothers and critical care patients across Jomoro",
+        "partner": "Half-Assini Hospital Social Welfare Directorate",
+        "fullReport": "Prior to this intervention, maternal emergencies faced lethal transfer delays due to the absence of a reliable municipal emergency vehicle. Hon. Dorcas personally funded and delivered the ambulance and cleared emergency delivery debt, ensuring mother and infant could return home in dignity."
+      },
+      {
+        "id": 2,
+        "tag": "Agrarian Bridges",
+        "category": "Agrarian Bridges",
+        "location": "Abolekpole",
+        "title": "Abolekpole Community Footbridge",
+        "description": "Constructed an all-weather pedestrian footbridge across the river corridor, reconnecting rural farmers and children previously cut off during heavy tropical rainstorms.",
+        "verificationStatus": "Completed & Certified",
+        "refCode": "DAT-INF-002",
+        "beneficiaries": "Cocoa, coconut farmers and school pupils",
+        "partner": "Abolekpole Community Elders & Local Artisans",
+        "fullReport": "For generations during rainy seasons, farmers in Abolekpole suffered extensive post-harvest losses because farm produce could not cross the swollen waterway. The newly built bridge provides uninterrupted market access 365 days a year."
+      },
+      {
+        "id": 3,
+        "tag": "Agrarian Bridges",
+        "category": "Agrarian Bridges",
+        "location": "Amakubakrom",
+        "title": "Amakubakrom Agrarian River Crossing",
+        "description": "Engineered a reinforced timber-and-steel crossing replacing hazardous makeshift tree logs that endangered elderly farmers and young children.",
+        "verificationStatus": "Completed & Certified",
+        "refCode": "DAT-INF-003",
+        "beneficiaries": "Over 1,200 agrarian residents and transport operators",
+        "partner": "Jomoro Municipal Engineering Oversight",
+        "fullReport": "Community members previously risked crossing treacherous logs with heavy farm loads. The commissioned footbridge restored safe transit, eliminating drowning risks and facilitating transport to regional buyers."
+      },
+      {
+        "id": 4,
+        "tag": "Agrarian Bridges",
+        "category": "Agrarian Bridges",
+        "location": "Azambolo & Alabuale",
+        "title": "Azambolo & Alabuale Farm Transit Bridges",
+        "description": "Constructed twin rural access bridges linking the fertile farming hinterlands of Azambolo and Alabuale to the main transit artery.",
+        "verificationStatus": "Completed & Certified",
+        "refCode": "DAT-INF-004",
+        "beneficiaries": "Over 850 farming households",
+        "partner": "Local Farming Associations",
+        "fullReport": "Farmers formally petitioned Hon. Dorcas after vehicles and motor tricycles could no longer reach collection points. She financed and oversaw construction, reducing transport overheads by over 40%."
+      },
+      {
+        "id": 5,
+        "tag": "Clean Water",
+        "category": "Clean Water",
+        "location": "Anlomatuope",
+        "title": "Anlomatuope Primary School Well Rescue",
+        "description": "Completely reconstructed and sealed a perilous open well that had become a verified death trap where two school children nearly lost their lives.",
+        "verificationStatus": "Commissioned & Inspected",
+        "refCode": "DAT-WAT-005",
+        "beneficiaries": "450 school children, teachers, and adjacent community",
+        "partner": "School Management Committee & Ghana Education Service",
+        "fullReport": "Responding immediately upon notification of the life-threatening condition of the well, Hon. Dorcas mobilized contractors within 48 hours to reconstruct, raise, and fit the well with safety covers and hygienic extraction pumps."
+      },
+      {
+        "id": 6,
+        "tag": "Clean Water",
+        "category": "Clean Water",
+        "location": "Nawule & Mpeasem",
+        "title": "Nawule Submersible Pump & Mpeasem Potable Well",
+        "description": "Installed an electric submersible water pump system for the town of Nawule and constructed a dedicated hand-dug well in Mpeasem.",
+        "verificationStatus": "Active & Supplying Water",
+        "refCode": "DAT-WAT-006",
+        "beneficiaries": "Town of Nawule and Mpeasem residents",
+        "partner": "Community Water & Sanitation Committee",
+        "fullReport": "Provided potable water to eliminate waterborne diseases and drastically cut the daily morning trek of young girls fetching water before school hours."
+      },
+      {
+        "id": 7,
+        "tag": "Economic Livelihoods",
+        "category": "Economic Livelihoods",
+        "location": "Municipal Wide",
+        "title": "Jomoro Rural Bank Interest-Free Women’s Loan Scheme",
+        "description": "Capitalized an innovative interest-free micro-credit revolving fund for market women and female traders navigating difficult economic conditions.",
+        "verificationStatus": "Audited Revolving Facility",
+        "refCode": "DAT-FIN-007",
+        "beneficiaries": "Over 200 women market traders in initial phase",
+        "partner": "Jomoro Rural Bank Limited",
+        "fullReport": "Recognizing that predatory interest rates crippled informal traders, Hon. Dorcas deposited personal security capital to underwrite 0% interest loans, providing women with working capital to scale retail trade."
+      },
+      {
+        "id": 8,
+        "tag": "Economic Livelihoods",
+        "category": "Economic Livelihoods",
+        "location": "Aleboale & Elubo",
+        "title": "Farmer Sprayer Donations & Trade Association Grants",
+        "description": "Donated Solo knapsack spraying machines to cocoa and rubber growers at Aleboale and granted direct support funds to the Elubo Garment Makers and Okada associations.",
+        "verificationStatus": "Disbursed & In Use",
+        "refCode": "DAT-ECO-008",
+        "beneficiaries": "Smallholder crop growers, tailors, and motorcycle operators",
+        "partner": "Elubo Garments Association & Local Cooperative",
+        "fullReport": "Direct livelihood inputs provided without political discrimination to ensure self-sustaining local productivity in agricultural and artisanal hubs."
+      }
+    ]
+  },
+  "transport": {
+    "kicker": "Executive Portfolio",
+    "headline": "National Transport Architecture & Connectivity",
+    "subhead": "Modernizing public transit fleets, decentralizing driver documentation, and safeguarding ECOWAS cross-border economic gateways.",
+    "distinctionSpotlight": {
+      "kicker": "National Excellence Recognition",
+      "title": "Best Performing Deputy Minister Award (2026)",
+      "text": "Conferred at the prestigious 6th Ministers of State Excellence Honours held in Accra. The distinction honored Hon. Dorcas Affo-Toffey for relentless drive in reviving public transport operations, turning around operational deficits at Metro Mass Transit Limited (MMTL), and championing commuter welfare.",
+      "badgeYear": "2026",
+      "badgeTitle": "Excellence Honours",
+      "badgeLocation": "Accra, Republic of Ghana"
+    },
+    "pillars": [
+      {
+        "number": "PILLAR 01 // MASS MOBILITY",
+        "title": "Metro Mass Transit (MMTL) Turnaround",
+        "description": "Spearheading comprehensive fleet rehabilitation, technical servicing audits, and route optimization to ensure students, market traders, and civil servants have dependable public transportation across intercity corridors.",
+        "outcome": "Reduced Commute Deficits"
+      },
+      {
+        "number": "PILLAR 02 // ROAD SAFETY",
+        "title": "Decentralized DVLA Clinics",
+        "description": "Bringing official licensing, registration, and roadworthiness inspection directly to commercial transport operators, tricycle riders, and rural drivers—dismantling bureaucratic barriers to legal operation.",
+        "outcome": "Regulatory Inclusion & Safety"
+      },
+      {
+        "number": "PILLAR 03 // BORDER ADVOCACY",
+        "title": "Elubo Regional Trade Lifeline",
+        "description": "Championed the economic survival of thousands of cross-border traders during parliamentary interrogation of the Minister for the Interior, securing calibrated reopenings that restored vital trade between Ghana and Côte d’Ivoire.",
+        "outcome": "Border Economic Security"
+      }
+    ],
+    "quote": {
+      "text": "“A nation cannot industrialize if its transport arteries are broken. We are building systems where public transit works for the market woman, the schoolchild, and the driver alike.”",
+      "author": "Hon. Dorcas Affo-Toffey addressing the Transport Infrastructure Forum"
+    },
+    "committees": [
+      "01. Trade & Industry Committee",
+      "02. Gender, Children & Social Protection",
+      "03. Lands & Natural Resources",
+      "04. Government Assurances Committee"
+    ]
+  },
+  "newsroom": {
+    "kicker": "Official Press Archive & Hansard Dispatches",
+    "headline": "Speeches, Press Releases & Records",
+    "subhead": "Official communiqués, parliamentary committee interventions, and policy keynotes from the Office of Hon. Dorcas Affo-Toffey.",
+    "items": [
+      {
+        "id": 1,
+        "category": "Parliamentary Address",
+        "date": "Parliament House, Accra",
+        "title": "Interrogating the Minister for the Interior on the Prolonged Closure of Land Borders",
+        "readTime": "5 Min Read",
+        "excerpt": "Standing on the floor of Parliament to quiz Hon. Ambrose Dery on the economic strangulation of Jomoro border communities and demanding safe reopening protocols.",
+        "fullText": "Hon. Dorcas Affo-Toffey formally summoned the Minister for the Interior to answer for the continued closure of Ghana’s land frontiers with Côte d’Ivoire. She emphasized that thousands of petty traders, female breadwinners, and Okada transport operators in Elubo were suffering severe destitution. Her relentless grilling sparked national consensus on phased border reopening protocols."
+      },
+      {
+        "id": 2,
+        "category": "Ministerial Keynotes",
+        "date": "Accra Ceremony",
+        "title": "Acceptance Keynote: Best Performing Deputy Minister Award (2026)",
+        "readTime": "4 Min Read",
+        "excerpt": "Honored at the 6th Ministers of State Excellence Honours for executing decisive operational turnaround in Ghana’s public transit and MMTL logistics systems.",
+        "fullText": "Addressing fellow ministers, members of the diplomatic corps, and civil society, Hon. Dorcas dedicated the award to frontline transport drivers and engineers. She declared that public mobility is an essential equalizer that connects rural agricultural output to national consumer markets."
+      },
+      {
+        "id": 3,
+        "category": "Maternal Justice",
+        "date": "Half-Assini Hospital",
+        "title": "Maternal Health Declaration: Ending Post-Delivery Financial Detention",
+        "readTime": "4 Min Read",
+        "excerpt": "Commissioning the Half-Assini emergency relief ambulance and liquidating outstanding delivery charges for stranded nursing mothers and their newborns.",
+        "fullText": "Celebrating her birthday at Half-Assini Government Hospital, Hon. Dorcas liquidated all pending maternity delivery bills and presented assorted care kits. She urged national healthcare authorities to implement structural protections preventing indigent mothers from being detained in post-delivery wards."
+      },
+      {
+        "id": 4,
+        "category": "Continental Honours",
+        "date": "London & Accra",
+        "title": "La Mode 100 Most Influential Leading African Women Recognition",
+        "readTime": "3 Min Read",
+        "excerpt": "Selected by UK-based La Mode Group among Africa’s top female trailblazers shaping governance, youth empowerment, and infrastructure.",
+        "fullText": "Marking International Women’s Day, UK-based publication La Mode named Hon. Dorcas Affo-Toffey among the 100 Most Influential African Women. The recognition lauded her combination of corporate business acumen with relentless grassroots philanthropy across Western Ghana."
+      },
+      {
+        "id": 5,
+        "category": "Parliamentary Address",
+        "date": "Select Committee Review",
+        "title": "Demanding Enhanced Infrastructure Allocation for Cocoa and Rubber Corridors",
+        "readTime": "4 Min Read",
+        "excerpt": "Advocating within the Trade & Industry committee for arterial road construction and feeder bridge rehabilitation across Jomoro’s farming belts.",
+        "fullText": "Speaking before the Parliamentary Select Committee on Trade & Industry, Hon. Dorcas highlighted that rural farmers in communities like Aleboale, Azambolo, and Abolekpole lose vital harvest income when feeder roads fail during heavy tropical monsoons, calling for equitable capital allocations."
+      }
+    ]
+  },
+  "contact": {
+    "kicker": "Direct MP Access // Open Governance",
+    "headline": "Citizen Direct Access & Constituency Secretariat",
+    "subhead": "Submit constituent requests, community infrastructure petitions, transport feedback, or investor proposals directly to the office.",
+    "offices": [
+      {
+        "name": "Parliamentary Office (Accra)",
+        "address": "Parliament House, Osu",
+        "details": "8th Parliament of the 4th Republic · Deputy Minister of Transport Liaison Desk"
+      },
+      {
+        "name": "Half-Assini Secretariat (Jomoro)",
+        "address": "Municipal Headquarters",
+        "details": "Half-Assini Central Desk · Serving Coastal & Agrarian Communities"
+      },
+      {
+        "name": "Elubo Border Secretariat",
+        "address": "Trade & Cross-Border Desk",
+        "details": "Elubo Gateway Office · Transport & Commercial Trade Liaison"
+      }
+    ],
+    "mediaChannels": {
+      "email": "office@dorcasaffotoffey.com",
+      "phone": "+233 24 300 5695",
+      "facebook": "fb.com/dorcastoffey"
+    }
+  },
+  "footer": {
+    "statement": "Dedicated to the principle that public service must deliver verifiable dignity to every community, farmer, mother, and youth across Ghana.",
+    "copyright": "Office of Hon. Dorcas Affo-Toffey. All Rights Reserved."
+  }
+}

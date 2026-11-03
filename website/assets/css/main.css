@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    background-color: #FAF8F5;
+    color: #11161B;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background-color: #7C3AED;
+    color: #FFFFFF;
+  }
+}
+
+/* Page Transitions */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1), transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(18px) scale(0.995);
+}
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+/* Lenis Recommended CSS */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+/* 3D Perspective Canvas & Cards */
+.perspective-container {
+  perspective: 1200px;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+/* Custom 3D Tilt Card Effect (GSAP handles transform; CSS handles shadow & border) */
+.card-3d-interactive {
+  transition: box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.45s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.45s ease;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.card-3d-interactive:hover {
+  box-shadow: 0 22px 44px -15px rgba(124, 58, 237, 0.16), 0 0 24px 0 rgba(124, 58, 237, 0.08);
+}
+
+/* 3D Floating Reveal Animation Base */
+.reveal-3d-init {
+  opacity: 0;
+  transform: perspective(1000px) rotateX(12deg) translateY(50px) scale(0.96);
+  transition: opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1), transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-3d-in-view {
+  opacity: 1;
+  transform: perspective(1000px) rotateX(0deg) translateY(0) scale(1);
+}
+
+/* Text Mask Reveal */
+.text-mask-container {
+  overflow: hidden;
+}
+
+.text-mask-child {
+  transform: translateY(110%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.text-mask-child.in-view {
+  transform: translateY(0%);
+}
+
+/* Subtle Shimmer & Specular Purple Highlight */
+.shimmer-purple {
+  background: linear-gradient(110deg, transparent 20%, rgba(124, 58, 237, 0.12) 50%, transparent 80%);
+  background-size: 200% 100%;
+  animation: shimmerMove 3.5s infinite;
+}
+
+@keyframes shimmerMove {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Smooth Horizontal Scroll Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
