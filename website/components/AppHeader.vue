@@ -96,7 +96,7 @@
       </div>
     </div>
 
-    <!-- Stylish Editorial Curtain Menu when Hamburger is Clicked -->
+    <!-- Stylish Full-Screen Editorial Curtain Menu (100vh, Non-Scrollable, Fits Everything) -->
     <Transition
       @enter="onMenuEnter"
       @leave="onMenuLeave"
@@ -104,26 +104,26 @@
     >
       <div
         v-if="menuOpen"
-        class="fixed inset-x-0 top-[68px] bottom-0 z-40 bg-white/95 backdrop-blur-xl border-t border-[#E6E1D7] flex flex-col justify-between px-6 sm:px-12 md:px-20 py-10 overflow-y-auto shadow-2xl"
-        style="background-color: rgba(255, 255, 255, 0.96);"
+        class="fixed inset-0 w-screen h-screen z-10 bg-white/95 backdrop-blur-xl flex flex-col justify-between pt-24 pb-6 px-6 sm:px-12 md:px-20 overflow-hidden select-none"
+        style="background-color: rgba(255, 255, 255, 0.97);"
       >
         <!-- Subtle background grid -->
         <div class="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#7C3AED_0.75px,transparent_0.75px)] [background-size:24px_24px]"></div>
 
-        <nav class="relative z-10 my-auto max-w-5xl mx-auto w-full divide-y divide-[#E6E1D7]">
+        <nav class="relative z-10 flex-1 flex flex-col justify-evenly max-w-5xl mx-auto w-full divide-y divide-[#E6E1D7]/80 my-2">
           <NuxtLink
             v-for="(link, idx) in allLinks"
             :key="link.name"
             :to="link.href"
             @click="closeMenu"
-            class="curtain-item group flex items-baseline justify-between py-4 sm:py-5 hover:pl-3 transition-all duration-300"
+            class="curtain-item group flex items-center justify-between py-2 sm:py-3 hover:pl-3 transition-all duration-300"
           >
             <div class="flex items-baseline gap-5 sm:gap-8">
               <span class="font-mono text-xs text-accent-purple font-semibold">
                 0{{ idx + 1 }} //
               </span>
               <span
-                class="font-serif text-3xl sm:text-5xl text-[#11161B] group-hover:text-accent-purple transition-colors tracking-tight"
+                class="font-serif text-2xl sm:text-4xl lg:text-[2.6rem] leading-none text-[#11161B] group-hover:text-accent-purple transition-colors tracking-tight"
                 :class="route.path === link.href ? 'text-accent-purple italic' : ''"
               >
                 {{ link.name }}
@@ -136,8 +136,8 @@
         </nav>
 
         <!-- Curtain Footer Bar -->
-        <div class="curtain-footer relative z-10 max-w-5xl mx-auto w-full pt-6 border-t border-[#E6E1D7] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-[#11161B]/60">
-          <div class="flex items-center gap-4 uppercase tracking-wider">
+        <div class="curtain-footer relative z-10 max-w-5xl mx-auto w-full pt-4 border-t border-[#E6E1D7] flex flex-col sm:flex-row items-center justify-between gap-3 font-mono text-[11px] text-[#11161B]/60 shrink-0">
+          <div class="flex items-center gap-3 sm:gap-4 uppercase tracking-wider text-[10px] sm:text-[11px]">
             <span>Parliament of Ghana</span>
             <span>·</span>
             <span>Jomoro Constituency</span>
@@ -147,7 +147,7 @@
           <NuxtLink
             to="/contact"
             @click="closeMenu"
-            class="px-5 py-2.5 bg-accent-purple text-white uppercase tracking-widest font-semibold hover:bg-accent-purple-dark transition-colors"
+            class="px-5 py-2 bg-accent-purple text-white uppercase tracking-widest font-semibold hover:bg-accent-purple-dark transition-colors"
           >
             Get Involved →
           </NuxtLink>
@@ -272,6 +272,12 @@ const animateNavState = (scrolled: boolean) => {
 
 watch(isScrolled, (val) => {
   animateNavState(val)
+})
+
+watch(menuOpen, (open) => {
+  if (import.meta.client) {
+    document.documentElement.style.overflow = open ? 'hidden' : ''
+  }
 })
 
 const toggleMenu = () => {
