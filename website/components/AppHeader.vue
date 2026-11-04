@@ -1,16 +1,16 @@
 <template>
   <header
-    class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    class="fixed top-0 left-0 w-full z-50 transition-[background-color,padding,border-color,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
     :class="[
-      isScrolled
-        ? 'bg-[#FAF8F5]/92 backdrop-blur-md py-4 border-b border-[#E6E1D7]/80 shadow-sm'
-        : 'bg-transparent py-6'
+      isScrolled || menuOpen
+        ? 'bg-[#FAF8F5] py-3.5 border-b border-[#E6E1D7] shadow-[0_12px_34px_-12px_rgba(17,22,27,0.08)]'
+        : 'bg-transparent py-6 border-b border-transparent'
     ]"
   >
-    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between gap-4 relative">
       <!-- Left: Executive Brand / Wordmark -->
-      <NuxtLink to="/" class="group flex flex-col focus:outline-none shrink-0">
-        <span class="font-serif text-2xl md:text-3xl tracking-tight text-[#11161B] group-hover:text-accent-purple transition-colors">
+      <NuxtLink to="/" class="group flex flex-col focus:outline-none shrink-0 z-20" @click="closeMenu">
+        <span class="font-serif text-2xl md:text-3xl tracking-tight text-[#11161B] group-hover:text-accent-purple transition-colors duration-300">
           Hon. Dorcas Affo-Toffey
         </span>
         <span class="font-mono text-[10px] tracking-widest uppercase text-[#11161B]/60 flex items-center gap-2 mt-0.5">
@@ -19,43 +19,142 @@
         </span>
       </NuxtLink>
 
-      <!-- Center: Navigation Links Matching Site Pages -->
-      <nav class="flex items-center gap-5 md:gap-8 overflow-x-auto no-scrollbar">
-        <NuxtLink
-          v-for="link in navLinks"
-          :key="link.name"
-          :to="link.href"
-          class="font-sans text-xs uppercase tracking-widest font-medium transition-colors relative py-1 whitespace-nowrap"
-          :class="[
-            route.path === link.href
-              ? 'text-accent-purple font-semibold after:w-full'
-              : 'text-[#11161B]/80 hover:text-accent-purple after:w-0 hover:after:w-full'
-          ]"
+      <!-- Center & Right Container -->
+      <div class="flex items-center justify-end flex-1 relative">
+        <!-- Unscrolled State: Horizontal Nav Links + Action CTA -->
+        <div
+          ref="navGroupRef"
+          class="flex items-center gap-5 md:gap-8"
+          :class="isScrolled ? 'pointer-events-none' : 'pointer-events-auto'"
         >
-          {{ link.name }}
-          <span class="absolute bottom-0 left-0 h-[2px] bg-accent-purple transition-all duration-300"></span>
-        </NuxtLink>
-      </nav>
+          <nav class="hidden md:flex items-center gap-6 lg:gap-8">
+            <NuxtLink
+              v-for="link in navLinks"
+              :key="link.name"
+              :to="link.href"
+              class="nav-stagger-link font-sans text-xs uppercase tracking-widest font-medium transition-colors relative py-1 whitespace-nowrap inline-block"
+              :class="[
+                route.path === link.href
+                  ? 'text-accent-purple font-semibold after:w-full'
+                  : 'text-[#11161B]/80 hover:text-accent-purple after:w-0 hover:after:w-full'
+              ]"
+            >
+              {{ link.name }}
+              <span class="absolute bottom-0 left-0 h-[2px] bg-accent-purple transition-all duration-300"></span>
+            </NuxtLink>
+          </nav>
 
-      <!-- Right: Action CTA -->
-      <div class="hidden sm:flex items-center shrink-0">
-        <NuxtLink
-          to="/contact"
-          class="inline-flex items-center justify-center px-5 py-2.5 bg-accent-purple text-white text-xs uppercase font-sans tracking-widest font-semibold border border-accent-purple hover:bg-accent-purple-dark hover:shadow-lg hover:shadow-accent-purple/20 transition-all duration-200"
+          <div class="nav-stagger-link hidden sm:flex items-center shrink-0">
+            <NuxtLink
+              to="/contact"
+              class="inline-flex items-center justify-center px-5 py-2.5 bg-accent-purple text-white text-xs uppercase font-sans tracking-widest font-semibold border border-accent-purple hover:bg-accent-purple-dark hover:shadow-lg hover:shadow-accent-purple/20 transition-all duration-200"
+            >
+              Get Involved →
+            </NuxtLink>
+          </div>
+        </div>
+
+        <!-- Scrolled State (or Mobile): Stylish Architectural Hamburger Button -->
+        <button
+          ref="hamburgerBtnRef"
+          @click="toggleMenu"
+          aria-label="Toggle Navigation Menu"
+          class="md:opacity-0 md:pointer-events-none md:absolute md:right-0 inline-flex items-center gap-3 px-4 py-2.5 bg-[#11161B] hover:bg-accent-purple text-[#FAF8F5] border border-[#11161B] hover:border-accent-purple transition-colors duration-300 group focus:outline-none shadow-md z-20"
         >
-          Get Involved →
-        </NuxtLink>
+          <span class="font-mono text-[10px] uppercase tracking-[0.22em] text-[#FAF8F5]/90 group-hover:text-white select-none">
+            {{ menuOpen ? 'Close' : 'Menu' }}
+          </span>
+          <div class="w-5 h-3 relative flex flex-col justify-between items-end">
+            <span
+              class="h-[1.5px] bg-current transition-all duration-300 origin-center"
+              :class="menuOpen ? 'w-5 rotate-45 translate-y-[5.25px]' : 'w-5 group-hover:w-3.5'"
+            ></span>
+            <span
+              class="h-[1.5px] bg-current transition-all duration-300 origin-center"
+              :class="menuOpen ? 'w-0 opacity-0' : 'w-3.5 group-hover:w-5'"
+            ></span>
+            <span
+              class="h-[1.5px] bg-current transition-all duration-300 origin-center"
+              :class="menuOpen ? 'w-5 -rotate-45 -translate-y-[5.25px]' : 'w-4 group-hover:w-5'"
+            ></span>
+          </div>
+        </button>
       </div>
     </div>
+
+    <!-- Stylish Editorial Curtain Menu when Hamburger is Clicked -->
+    <Transition
+      @enter="onMenuEnter"
+      @leave="onMenuLeave"
+      :css="false"
+    >
+      <div
+        v-if="menuOpen"
+        class="fixed inset-x-0 top-[68px] bottom-0 z-40 bg-[#FAF8F5]/98 backdrop-blur-xl border-t border-[#E6E1D7] flex flex-col justify-between px-6 sm:px-12 md:px-20 py-10 overflow-y-auto"
+      >
+        <!-- Subtle background grid -->
+        <div class="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#7C3AED_0.75px,transparent_0.75px)] [background-size:24px_24px]"></div>
+
+        <nav class="relative z-10 my-auto max-w-5xl mx-auto w-full divide-y divide-[#E6E1D7]">
+          <NuxtLink
+            v-for="(link, idx) in allLinks"
+            :key="link.name"
+            :to="link.href"
+            @click="closeMenu"
+            class="curtain-item group flex items-baseline justify-between py-4 sm:py-5 hover:pl-3 transition-all duration-300"
+          >
+            <div class="flex items-baseline gap-5 sm:gap-8">
+              <span class="font-mono text-xs text-accent-purple font-semibold">
+                0{{ idx + 1 }} //
+              </span>
+              <span
+                class="font-serif text-3xl sm:text-5xl text-[#11161B] group-hover:text-accent-purple transition-colors tracking-tight"
+                :class="route.path === link.href ? 'text-accent-purple italic' : ''"
+              >
+                {{ link.name }}
+              </span>
+            </div>
+            <span class="hidden sm:inline-block font-mono text-[11px] uppercase tracking-widest text-[#11161B]/45 group-hover:text-accent-purple group-hover:translate-x-1.5 transition-all">
+              {{ link.desc }} →
+            </span>
+          </NuxtLink>
+        </nav>
+
+        <!-- Curtain Footer Bar -->
+        <div class="curtain-footer relative z-10 max-w-5xl mx-auto w-full pt-6 border-t border-[#E6E1D7] flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-[11px] text-[#11161B]/60">
+          <div class="flex items-center gap-4 uppercase tracking-wider">
+            <span>Parliament of Ghana</span>
+            <span>·</span>
+            <span>Jomoro Constituency</span>
+            <span>·</span>
+            <span>Ministry of Transport</span>
+          </div>
+          <NuxtLink
+            to="/contact"
+            @click="closeMenu"
+            class="px-5 py-2.5 bg-accent-purple text-white uppercase tracking-widest font-semibold hover:bg-accent-purple-dark transition-colors"
+          >
+            Get Involved →
+          </NuxtLink>
+        </div>
+      </div>
+    </Transition>
   </header>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+import gsap from 'gsap'
 
 const route = useRoute()
 const isScrolled = ref(false)
+const menuOpen = ref(false)
+
+const navGroupRef = ref<HTMLElement | null>(null)
+const hamburgerBtnRef = ref<HTMLElement | null>(null)
+
+let navTl: gsap.core.Timeline | null = null
 
 const navLinks = [
   { name: 'About', href: '/about' },
@@ -65,15 +164,175 @@ const navLinks = [
   { name: 'Contact', href: '/contact' }
 ]
 
+const allLinks = [
+  { name: 'Home', href: '/', desc: 'Landing & Vision' },
+  { name: 'About Dorcas', href: '/about', desc: 'Roots, Heritage & Leadership' },
+  { name: 'Initiatives', href: '/initiatives', desc: 'Verified Impact Ledger' },
+  { name: 'Transport Policy', href: '/transport', desc: 'National Portfolio & Reforms' },
+  { name: 'Newsroom', href: '/newsroom', desc: 'Speeches, Statements & Press' },
+  { name: 'Citizen Desk', href: '/contact', desc: 'Direct Inquiries & Secretariat' }
+]
+
+const animateNavState = (scrolled: boolean) => {
+  if (!navGroupRef.value || !hamburgerBtnRef.value) return
+  if (window.innerWidth < 768) return // Mobile always shows the compact Menu button
+
+  const links = navGroupRef.value.querySelectorAll<HTMLElement>('.nav-stagger-link')
+  const burger = hamburgerBtnRef.value
+
+  if (navTl) navTl.kill()
+  navTl = gsap.timeline()
+
+  if (scrolled) {
+    // 1. Stagger nav links out to the right with opacity -> 0
+    navTl.to(
+      links,
+      {
+        x: 42,
+        opacity: 0,
+        duration: 0.55,
+        stagger: { each: 0.045, from: 'end' },
+        ease: 'expo.out',
+         overwrite: 'auto'
+      },
+      0
+    )
+
+    // 2. Stylishly animate the hamburger button into view on the right
+    navTl.fromTo(
+      burger,
+      {
+        x: -24,
+        opacity: 0,
+        scale: 0.82,
+        pointerEvents: 'none'
+      },
+      {
+        x: 0,
+        opacity: 1,
+        scale: 1,
+        pointerEvents: 'auto',
+        duration: 0.65,
+        ease: 'expo.out',
+        overwrite: 'auto'
+      },
+      0.14
+    )
+  } else {
+    // Close menu if open when returning to top
+    if (menuOpen.value) menuOpen.value = false
+
+    // 1. Animate hamburger out to the right
+    navTl.to(
+      burger,
+      {
+        x: 20,
+        opacity: 0,
+        scale: 0.82,
+        pointerEvents: 'none',
+        duration: 0.4,
+        ease: 'power3.out',
+        overwrite: 'auto'
+      },
+      0
+    )
+
+    // 2. Stagger nav links back in from the right to their resting place
+    navTl.to(
+      links,
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.65,
+        stagger: { each: 0.05, from: 'start' },
+        ease: 'expo.out',
+        overwrite: 'auto'
+      },
+      0.1
+    )
+  }
+}
+
+watch(isScrolled, (val) => {
+  animateNavState(val)
+})
+
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value
+}
+
+const closeMenu = () => {
+  menuOpen.value = false
+}
+
+const onMenuEnter = (el: Element, done: () => void) => {
+  const items = el.querySelectorAll('.curtain-item')
+  const footer = el.querySelector('.curtain-footer')
+
+  const tl = gsap.timeline({ onComplete: done })
+  tl.fromTo(
+    el,
+    { opacity: 0, y: -16 },
+    { opacity: 1, y: 0, duration: 0.45, ease: 'expo.out' },
+    0
+  )
+  if (items.length) {
+    tl.fromTo(
+      items,
+      { opacity: 0, x: -28, rotateX: 8 },
+      { opacity: 1, x: 0, rotateX: 0, duration: 0.6, stagger: 0.055, ease: 'expo.out' },
+      0.08
+    )
+  }
+  if (footer) {
+    tl.fromTo(
+      footer,
+      { opacity: 0, y: 14 },
+      { opacity: 1, y: 0, duration: 0.5, ease: 'expo.out' },
+      0.22
+    )
+  }
+}
+
+const onMenuLeave = (el: Element, done: () => void) => {
+  gsap.to(el, {
+    opacity: 0,
+    y: -12,
+    duration: 0.3,
+    ease: 'power3.inOut',
+    onComplete: done
+  })
+}
+
 const handleScroll = () => {
-  isScrolled.value = window.scrollY > 30
+  isScrolled.value = window.scrollY > 45
+}
+
+const handleResize = () => {
+  if (!navGroupRef.value || !hamburgerBtnRef.value) return
+  if (window.innerWidth < 768) {
+    gsap.set(hamburgerBtnRef.value, { clearProps: 'all' })
+  } else {
+    animateNavState(isScrolled.value)
+  }
 }
 
 onMounted(() => {
+  handleScroll()
+  if (window.innerWidth >= 768 && hamburgerBtnRef.value) {
+    gsap.set(hamburgerBtnRef.value, {
+      opacity: isScrolled.value ? 1 : 0,
+      x: isScrolled.value ? 0 : -24,
+      scale: isScrolled.value ? 1 : 0.82,
+      pointerEvents: isScrolled.value ? 'auto' : 'none'
+    })
+  }
   window.addEventListener('scroll', handleScroll, { passive: true })
+  window.addEventListener('resize', handleResize, { passive: true })
 })
 
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
+  window.removeEventListener('resize', handleResize)
 })
 </script>
