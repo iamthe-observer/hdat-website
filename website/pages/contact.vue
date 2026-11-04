@@ -1,53 +1,53 @@
 <template>
-  <div class="pt-28 pb-24 bg-[#FAF8F5]">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
+  <div class="pt-24 pb-16 sm:pt-28 sm:pb-24 bg-[#FAF8F5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
       
       <!-- Page Hero -->
-      <div class="gsap-hero-stagger mb-16 pb-10 border-b border-[#E6E1D7]">
-        <div class="hero-el inline-flex items-center gap-2 px-3 py-1 bg-accent-purple/10 border border-accent-purple/30 text-accent-purple font-mono text-[11px] uppercase tracking-widest mb-4">
+      <div class="gsap-hero-stagger mb-12 sm:mb-16 pb-8 sm:pb-10 border-b border-[#E6E1D7]">
+        <div class="hero-el inline-flex items-center gap-2 px-3 py-1 bg-accent-purple/10 border border-accent-purple/30 text-accent-purple font-mono text-[10px] sm:text-[11px] uppercase tracking-widest mb-3 sm:mb-4">
           <span class="w-2 h-2 rounded-full bg-accent-purple"></span>
           Direct MP Access // Open Governance
         </div>
-        <h1 class="hero-el font-serif text-4xl sm:text-6xl md:text-7xl text-[#11161B] tracking-tight leading-[1.05] max-w-4xl">
+        <h1 class="hero-el font-serif text-[1.95rem] leading-[1.08] sm:text-5xl md:text-7xl text-[#11161B] tracking-tight sm:leading-[1.05] max-w-4xl">
           Citizen Direct Access & Constituency Secretariat
         </h1>
-        <p class="hero-el font-sans text-base md:text-xl text-[#11161B]/70 max-w-2xl mt-4 leading-relaxed">
+        <p class="hero-el font-sans text-sm sm:text-base md:text-xl text-[#11161B]/70 max-w-2xl mt-3 sm:mt-4 leading-relaxed">
           Submit constituent requests, community infrastructure petitions, transport feedback, or investor proposals directly to the office.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
         
         <!-- Left: Office Locations & Channels -->
-        <div class="lg:col-span-5 space-y-8">
+        <div class="lg:col-span-5 space-y-6 sm:space-y-8">
           <div class="space-y-4 stagger-parent">
             
-            <div class="stagger-item tilt-3d card-3d-interactive p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
-              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-2">
+            <div class="stagger-item tilt-3d card-3d-interactive p-6 sm:p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
+              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-1.5 sm:mb-2">
                 Parliamentary Office (Accra)
               </span>
-              <p class="font-serif text-2xl text-[#11161B]">Parliament House, Osu</p>
-              <p class="font-sans text-sm text-[#11161B]/70 mt-1">
+              <p class="font-serif text-xl sm:text-2xl text-[#11161B]">Parliament House, Osu</p>
+              <p class="font-sans text-xs sm:text-sm text-[#11161B]/70 mt-1">
                 8th Parliament of the 4th Republic · Deputy Minister of Transport Liaison Desk
               </p>
             </div>
 
-            <div class="stagger-item tilt-3d card-3d-interactive p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
-              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-2">
+            <div class="stagger-item tilt-3d card-3d-interactive p-6 sm:p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
+              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-1.5 sm:mb-2">
                 Half-Assini Secretariat (Jomoro)
               </span>
-              <p class="font-serif text-2xl text-[#11161B]">Municipal Headquarters</p>
-              <p class="font-sans text-sm text-[#11161B]/70 mt-1">
+              <p class="font-serif text-xl sm:text-2xl text-[#11161B]">Municipal Headquarters</p>
+              <p class="font-sans text-xs sm:text-sm text-[#11161B]/70 mt-1">
                 Half-Assini Central Desk · Serving Coastal & Agrarian Communities
               </p>
             </div>
 
-            <div class="stagger-item tilt-3d card-3d-interactive p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
-              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-2">
+            <div class="stagger-item tilt-3d card-3d-interactive p-6 sm:p-8 bg-[#FFFFFF] border border-[#E6E1D7] shadow-sm">
+              <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold block mb-1.5 sm:mb-2">
                 Elubo Border Secretariat
               </span>
-              <p class="font-serif text-2xl text-[#11161B]">Trade & Cross-Border Desk</p>
-              <p class="font-sans text-sm text-[#11161B]/70 mt-1">
+              <p class="font-serif text-xl sm:text-2xl text-[#11161B]">Trade & Cross-Border Desk</p>
+              <p class="font-sans text-xs sm:text-sm text-[#11161B]/70 mt-1">
                 Elubo Gateway Office · Transport & Commercial Trade Liaison
               </p>
             </div>
@@ -55,7 +55,7 @@
           </div>
 
           <!-- Direct Channels -->
-          <div class="reveal-3d p-6 bg-[#11161B] text-white space-y-3">
+          <div class="reveal-3d p-5 sm:p-6 bg-[#11161B] text-white space-y-3">
             <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest block">
               Official Media & Digital Channels
             </span>
@@ -68,8 +68,8 @@
         </div>
 
         <!-- Right: Dispatch Submission Form -->
-        <div class="lg:col-span-7 bg-[#FFFFFF] border-2 border-[#E6E1D7] p-8 sm:p-12 shadow-lg relative gsap-scrub-card stagger-parent">
-          <div class="stagger-item absolute top-0 right-0 bg-accent-purple text-white px-4 py-1.5 font-mono text-[10px] uppercase tracking-widest">
+        <div class="lg:col-span-7 bg-[#FFFFFF] border-2 border-[#E6E1D7] p-5 sm:p-12 pt-10 sm:pt-12 shadow-lg relative gsap-scrub-card stagger-parent">
+          <div class="stagger-item absolute top-0 right-0 bg-accent-purple text-white px-3.5 py-1.5 sm:px-4 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest">
             Verified Ingestion Desk
           </div>
 

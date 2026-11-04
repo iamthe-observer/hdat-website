@@ -1,46 +1,46 @@
 <template>
-  <section id="newsroom" class="py-28 md:py-36 bg-[#F2EFE9] border-t border-b border-[#E6E1D7] relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
+  <section id="newsroom" class="py-16 sm:py-24 md:py-36 bg-[#F2EFE9] border-t border-b border-[#E6E1D7] relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
       
       <!-- Editorial Masthead Header -->
-      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b-2 border-[#11161B] pb-6 reveal-3d">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-16 border-b-2 border-[#11161B] pb-4 sm:pb-6 reveal-3d">
         <div>
-          <span class="font-mono text-xs text-accent-purple tracking-widest uppercase block mb-1">
+          <span class="font-mono text-[10px] sm:text-xs text-accent-purple tracking-widest uppercase block mb-1">
             Lorem Ipsum // Newsroom
           </span>
-          <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl text-[#11161B] tracking-tight">
+          <h2 class="font-serif text-2xl sm:text-4xl md:text-5xl lg:text-6xl text-[#11161B] tracking-tight leading-tight">
             Dolor Sit Amet Consectetur
           </h2>
         </div>
-        <div class="mt-4 md:mt-0 font-mono text-xs text-[#11161B]/60 text-right">
+        <div class="mt-2 md:mt-0 font-mono text-[10px] sm:text-xs text-[#11161B]/60 md:text-right">
           <span>LOREM IPSUM DOLOR SIT AMET</span>
         </div>
       </div>
 
       <!-- Articles Grid (3 Editorial Columns) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 stagger-parent">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-8 stagger-parent">
         
         <article
           v-for="item in newsItems"
           :key="item.id"
-          class="stagger-item tilt-3d card-3d-interactive bg-[#FAF8F5] border border-[#E6E1D7] p-8 flex flex-col justify-between hover:border-accent-purple group cursor-pointer"
+          class="stagger-item tilt-3d card-3d-interactive bg-[#FAF8F5] border border-[#E6E1D7] p-6 sm:p-8 flex flex-col justify-between hover:border-accent-purple group cursor-pointer"
           @click="openModal(item)"
         >
           <div>
-            <div class="flex items-center justify-between mb-4">
+            <div class="flex items-center justify-between mb-3 sm:mb-4">
               <span class="font-mono text-[10px] text-accent-purple uppercase tracking-widest font-semibold bg-accent-purple/10 px-2 py-0.5">
                 {{ item.category }}
               </span>
-              <span class="font-mono text-xs text-[#11161B]/40">
+              <span class="font-mono text-[11px] sm:text-xs text-[#11161B]/40">
                 {{ item.date }}
               </span>
             </div>
 
-            <h3 class="font-serif text-2xl text-[#11161B] mb-3 group-hover:text-accent-purple transition-colors leading-snug">
+            <h3 class="font-serif text-xl sm:text-2xl text-[#11161B] mb-2.5 sm:mb-3 group-hover:text-accent-purple transition-colors leading-snug">
               {{ item.title }}
             </h3>
 
-            <p class="font-sans text-xs sm:text-sm text-[#11161B]/75 leading-relaxed mb-6">
+            <p class="font-sans text-xs sm:text-sm text-[#11161B]/75 leading-relaxed mb-5 sm:mb-6">
               {{ item.excerpt }}
             </p>
           </div>

@@ -1,35 +1,35 @@
 <template>
-  <div class="pt-28 pb-24 bg-[#FAF8F5]">
-    <div class="max-w-7xl mx-auto px-6 md:px-12">
+  <div class="pt-24 pb-16 sm:pt-28 sm:pb-24 bg-[#FAF8F5]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12">
       
       <!-- Page Hero / Editorial Masthead -->
-      <div class="gsap-hero-stagger mb-16 pb-10 border-b-2 border-[#11161B]">
-        <div class="hero-el inline-flex items-center gap-2 px-3 py-1 bg-accent-purple/10 border border-accent-purple/30 text-accent-purple font-mono text-[11px] uppercase tracking-widest mb-4">
+      <div class="gsap-hero-stagger mb-12 sm:mb-16 pb-8 sm:pb-10 border-b-2 border-[#11161B]">
+        <div class="hero-el inline-flex items-center gap-2 px-3 py-1 bg-accent-purple/10 border border-accent-purple/30 text-accent-purple font-mono text-[10px] sm:text-[11px] uppercase tracking-widest mb-3 sm:mb-4">
           <span class="w-2 h-2 rounded-full bg-accent-purple"></span>
           Lorem Ipsum // Dispatches
         </div>
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 sm:gap-6">
           <div>
-            <h1 class="hero-el font-serif text-4xl sm:text-6xl md:text-7xl text-[#11161B] tracking-tight leading-[1.05]">
+            <h1 class="hero-el font-serif text-[1.95rem] leading-[1.08] sm:text-5xl md:text-7xl text-[#11161B] tracking-tight sm:leading-[1.05]">
               Dolor Sit Amet Consectetur
             </h1>
-            <p class="hero-el font-sans text-base md:text-xl text-[#11161B]/70 max-w-2xl mt-4 leading-relaxed">
+            <p class="hero-el font-sans text-sm sm:text-base md:text-xl text-[#11161B]/70 max-w-2xl mt-3 sm:mt-4 leading-relaxed">
               Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.
             </p>
           </div>
-          <div class="hero-el font-mono text-xs text-[#11161B]/50 shrink-0">
+          <div class="hero-el font-mono text-[11px] sm:text-xs text-[#11161B]/50 shrink-0">
             LOREM ARCHIVE // 2026
           </div>
         </div>
       </div>
 
       <!-- Category Filter Tabs -->
-      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-12 no-scrollbar stagger-parent">
+      <div class="flex items-center gap-2 overflow-x-auto pb-3 sm:pb-4 mb-8 sm:mb-12 no-scrollbar stagger-parent">
         <button
           v-for="cat in categories"
           :key="cat"
           @click="selectCategory(cat)"
-          class="stagger-item px-5 py-2.5 font-mono text-xs uppercase tracking-wider whitespace-nowrap transition-colors duration-200 border"
+          class="stagger-item px-4 py-2 sm:px-5 sm:py-2.5 font-mono text-[11px] sm:text-xs uppercase tracking-wider whitespace-nowrap transition-colors duration-200 border"
           :class="[
             activeCategory === cat
               ? 'bg-accent-purple text-white border-accent-purple shadow-md'
@@ -41,12 +41,12 @@
       </div>
 
       <!-- Articles Grid with Staggered Entry & 3D Tilt Cards -->
-      <div ref="newsGridRef" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-parent">
+      <div ref="newsGridRef" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-8 stagger-parent">
         
         <article
           v-for="item in filteredNews"
           :key="item.id"
-          class="stagger-item tilt-3d card-3d-interactive bg-[#FFFFFF] border border-[#E6E1D7] p-8 flex flex-col justify-between shadow-sm hover:border-accent-purple group cursor-pointer"
+          class="stagger-item tilt-3d card-3d-interactive bg-[#FFFFFF] border border-[#E6E1D7] p-6 sm:p-8 flex flex-col justify-between shadow-sm hover:border-accent-purple group cursor-pointer"
           @click="openModal(item)"
         >
           <div>
@@ -59,11 +59,11 @@
               </span>
             </div>
 
-            <h3 class="font-serif text-2xl text-[#11161B] mb-3 group-hover:text-accent-purple transition-colors leading-snug">
+            <h3 class="font-serif text-xl sm:text-2xl text-[#11161B] mb-2.5 sm:mb-3 group-hover:text-accent-purple transition-colors leading-snug">
               {{ item.title }}
             </h3>
 
-            <p class="font-sans text-xs sm:text-sm text-[#11161B]/75 leading-relaxed mb-6">
+            <p class="font-sans text-xs sm:text-sm text-[#11161B]/75 leading-relaxed mb-5 sm:mb-6">
               {{ item.excerpt }}
             </p>
           </div>
@@ -93,23 +93,23 @@
     >
       <div
         v-if="activeStatement"
-        class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6"
+        class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-3.5 sm:p-6"
         @click.self="activeStatement = null"
       >
-        <div class="bg-[#FAF8F5] border-2 border-accent-purple w-full max-w-2xl max-h-[85vh] overflow-y-auto p-8 sm:p-10 shadow-2xl relative">
+        <div class="bg-[#FAF8F5] border-2 border-accent-purple w-full max-w-2xl max-h-[88dvh] overflow-y-auto p-5 sm:p-8 md:p-10 shadow-2xl relative">
           <button
             @click="activeStatement = null"
-            class="absolute top-6 right-6 text-xl text-[#11161B]/60 hover:text-accent-purple font-mono"
+            class="absolute top-4 right-4 sm:top-6 sm:right-6 text-xl text-[#11161B]/60 hover:text-accent-purple font-mono"
             aria-label="Close"
           >
             ✕
           </button>
 
-          <span class="font-mono text-xs bg-accent-purple text-white px-3 py-1 uppercase tracking-widest inline-block mb-4">
+          <span class="font-mono text-[10px] sm:text-xs bg-accent-purple text-white px-2.5 py-1 uppercase tracking-widest inline-block mb-3 sm:mb-4">
             {{ activeStatement.category }} · {{ activeStatement.date }}
           </span>
 
-          <h3 class="font-serif text-3xl sm:text-4xl text-[#11161B] mb-4">
+          <h3 class="font-serif text-2xl sm:text-4xl text-[#11161B] mb-4 leading-snug">
             {{ activeStatement.title }}
           </h3>
 

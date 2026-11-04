@@ -135,24 +135,24 @@
 
         <!-- Hero Card Overlaid Content — animates in as the card zooms out to become the HeroCard -->
         <div
-          class="absolute inset-0 flex flex-col justify-between items-center text-center p-6 sm:p-10 z-20 pointer-events-none transition-all duration-700"
+          class="absolute inset-0 flex flex-col justify-between items-center text-center p-5 sm:p-10 z-20 pointer-events-none transition-all duration-700"
           :class="phase === 'zoom-out' || phase === 'docked' ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'"
         >
-          <div class="pt-4">
-            <span class="font-serif italic text-white/90 text-xl sm:text-2xl md:text-3xl tracking-wide drop-shadow-md">
+          <div class="pt-2 sm:pt-4">
+            <span class="font-serif italic text-white/90 text-lg sm:text-2xl md:text-3xl tracking-wide drop-shadow-md block">
               Member of Parliament & Deputy Minister
             </span>
           </div>
 
-          <div class="w-full my-auto px-2">
-            <h2 class="font-display font-extrabold text-accent-purple text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight leading-[0.92] uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)] select-none">
+          <div class="w-full my-auto px-1 sm:px-2">
+            <h2 class="font-display font-extrabold text-accent-purple text-[2.1rem] leading-[0.98] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight sm:leading-[0.92] uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.85)] select-none">
               Leadership Rooted <br class="hidden sm:inline" /> In Dignity
             </h2>
           </div>
 
-          <div class="pb-4">
+          <div class="pb-3 sm:pb-4">
             <span
-              class="inline-flex items-center gap-3 px-8 py-4 bg-[#FAF8F5] border-2 border-accent-purple text-accent-purple font-display font-bold text-xs sm:text-sm tracking-widest uppercase shadow-xl"
+              class="inline-flex items-center gap-2.5 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-[#FAF8F5] border-2 border-accent-purple text-accent-purple font-display font-bold text-[11px] sm:text-sm tracking-widest uppercase shadow-xl"
             >
               <span>Discover The Vision</span>
               <span>→</span>
@@ -310,8 +310,12 @@ const cardDynamicStyle = computed(() => {
 const sleep = (ms: number) => new Promise<void>(resolve => setTimeout(resolve, ms))
 
 onMounted(async () => {
+  const nuxtApp = useNuxtApp()
+  const lenis = (nuxtApp as any).$lenis
   window.scrollTo(0, 0)
   document.documentElement.style.overflow = 'hidden'
+  document.body.style.overflow = 'hidden'
+  if (lenis && typeof lenis.stop === 'function') lenis.stop()
 
   // Brief initial pause on Frame 01 so the viewer registers the vertical rectangle
   await sleep(180)
@@ -346,6 +350,8 @@ onMounted(async () => {
   // 4. Docked onto the HeroCard — fade away loader wrapper seamlessly
   phase.value = 'docked'
   document.documentElement.style.overflow = ''
+  document.body.style.overflow = ''
+  if (lenis && typeof lenis.start === 'function') lenis.start()
   visible.value = false
   emit('done')
 })

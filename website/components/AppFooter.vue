@@ -1,22 +1,22 @@
 <template>
-  <footer class="gsap-footer bg-[#11161B] text-[#FAF8F5] pt-20 pb-12 border-t border-white/10 relative overflow-hidden">
+  <footer class="gsap-footer bg-[#11161B] text-[#FAF8F5] pt-14 pb-10 sm:pt-20 sm:pb-12 border-t border-white/10 relative overflow-hidden">
     <!-- Subtle Violet Specular Lighting on Footer Edge -->
     <div class="gsap-line-center absolute top-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-accent-purple to-transparent origin-center"></div>
 
-    <div class="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 relative z-10">
       
       <!-- Top Footer Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-white/10 stagger-parent">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-12 gap-8 sm:gap-12 pb-12 sm:pb-16 border-b border-white/10 stagger-parent">
         
         <!-- Left: Brand Statement -->
-        <div class="md:col-span-6 space-y-4 stagger-item">
-          <NuxtLink to="/" class="font-serif text-3xl text-white tracking-tight block hover:text-accent-purple transition-colors">
+        <div class="sm:col-span-2 md:col-span-6 space-y-3 sm:space-y-4 stagger-item">
+          <NuxtLink to="/" class="font-serif text-2xl sm:text-3xl text-white tracking-tight block hover:text-accent-purple transition-colors">
             Hon. Dorcas Affo-Toffey
           </NuxtLink>
-          <p class="font-mono text-xs uppercase text-accent-purple tracking-widest">
+          <p class="font-mono text-[10px] sm:text-xs uppercase text-accent-purple tracking-widest leading-relaxed">
             Member of Parliament, Jomoro · Deputy Minister of Transport
           </p>
-          <p class="font-sans text-xs text-[#EAE5DC]/60 max-w-md leading-relaxed pt-2">
+          <p class="font-sans text-xs text-[#EAE5DC]/60 max-w-md leading-relaxed pt-1 sm:pt-2">
             Dedicated to the principle that public service must deliver verifiable dignity to every community, farmer, mother, and youth across Ghana.
           </p>
         </div>

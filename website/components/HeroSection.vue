@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen bg-[#FAF8F5] flex flex-col justify-between pt-28 pb-12 overflow-hidden">
+  <section class="relative min-h-[100dvh] bg-[#FAF8F5] flex flex-col justify-between pt-20 pb-8 sm:pt-28 sm:pb-12 overflow-hidden">
     <!-- Top subtle grid accents -->
     <div class="absolute inset-0 pointer-events-none opacity-40 bg-[radial-gradient(#7C3AED_0.75px,transparent_0.75px)] [background-size:24px_24px]"></div>
 
@@ -9,7 +9,7 @@
       <!-- The Photo Frame Container with Interactive Cross-fade -->
       <div 
         id="hero-card-frame"
-        class="relative w-full aspect-[4/3] md:aspect-[16/10] max-h-[580px] bg-[#11161B] overflow-hidden shadow-2xl transition-all duration-700 group cursor-pointer"
+        class="relative w-full min-h-[66dvh] sm:min-h-0 sm:aspect-[16/10] max-h-[600px] sm:max-h-[580px] bg-[#11161B] overflow-hidden shadow-2xl transition-all duration-700 group cursor-pointer"
         @mouseenter="isHovered = true"
         @mouseleave="isHovered = false"
       >
@@ -61,28 +61,28 @@
         <!-- Vignette & Cinematic Shadow Overlay -->
         <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/75 pointer-events-none"></div>
 
-        <!-- Overlaid Content (Exact Layout from Reference Screenshot) -->
-        <div class="absolute inset-0 flex flex-col justify-between items-center text-center p-6 sm:p-10 z-20 pointer-events-none">
+        <!-- Overlaid Content (Mobile-Tailored & Desktop Reference Layout) -->
+        <div class="absolute inset-0 flex flex-col justify-between items-center text-center p-5 sm:p-10 z-20 pointer-events-none">
           
-          <!-- Top Kicker (Italic Serif like "Meet the") -->
-          <div class="pt-4">
-            <span class="font-serif italic text-white/90 text-xl sm:text-2xl md:text-3xl tracking-wide drop-shadow-md">
+          <!-- Top Kicker (Italic Serif) -->
+          <div class="pt-2 sm:pt-4">
+            <span class="font-serif italic text-white/90 text-lg sm:text-2xl md:text-3xl tracking-wide drop-shadow-md block">
               Member of Parliament & Deputy Minister
             </span>
           </div>
 
-          <!-- Massive Headline Overlapping Center of Image (Bold, Vibrant Violet Accent) -->
-          <div class="w-full my-auto px-2">
-            <h1 class="font-display font-extrabold text-accent-purple text-4xl sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight leading-[0.92] uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.8)] select-none">
+          <!-- Massive Headline Overlapping Center of Image -->
+          <div class="w-full my-auto px-1 sm:px-2">
+            <h1 class="font-display font-extrabold text-accent-purple text-[2.1rem] leading-[0.98] sm:text-6xl md:text-7xl lg:text-[5.5rem] tracking-tight sm:leading-[0.92] uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.85)] select-none">
               Leadership Rooted <br class="hidden sm:inline" /> In Dignity
             </h1>
           </div>
 
           <!-- Layered CTA Button (Lower Third of Frame) -->
-          <div class="pb-4 pointer-events-auto">
+          <div class="pb-3 sm:pb-4 pointer-events-auto">
             <a
               href="#story"
-              class="inline-flex items-center gap-3 px-8 py-4 bg-[#FAF8F5] border-2 border-accent-purple text-accent-purple font-display font-bold text-xs sm:text-sm tracking-widest uppercase hover:bg-accent-purple hover:text-white transition-all duration-300 shadow-xl group/btn"
+              class="inline-flex items-center gap-2.5 sm:gap-3 px-6 py-3 sm:px-8 sm:py-4 bg-[#FAF8F5] border-2 border-accent-purple text-accent-purple font-display font-bold text-[11px] sm:text-sm tracking-widest uppercase hover:bg-accent-purple hover:text-white transition-all duration-300 shadow-xl group/btn"
             >
               <span>Discover The Vision</span>
               <span class="group-hover/btn:translate-x-1.5 transition-transform duration-200">→</span>
@@ -91,8 +91,8 @@
 
         </div>
 
-        <!-- Photo Credit / Archive Stamp (Bottom Right of Frame) -->
-        <div class="absolute bottom-3 right-4 z-20 pointer-events-none">
+        <!-- Photo Credit / Archive Stamp (Bottom Right of Frame on Desktop) -->
+        <div class="hidden sm:block absolute bottom-3 right-4 z-20 pointer-events-none">
           <span class="font-mono text-[9px] uppercase tracking-wider text-white/40">
             {{ isHovered || scrollCrossfade ? 'Mode: Community In Action · Jomoro' : 'Mode: Official Stateswoman Mandate' }}
           </span>

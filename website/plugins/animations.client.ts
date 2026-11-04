@@ -322,33 +322,36 @@ export default defineNuxtPlugin((nuxtApp) => {
       }
 
       // ── 9. 60fps Magnetic 3D Card Tilt (.tilt-3d) ──────────────────────────
-      const tiltCards = gsap.utils.toArray<HTMLElement>('.tilt-3d')
-      tiltCards.forEach((card) => {
-        gsap.set(card, { transformPerspective: 1100 })
+      // Only enable mouse-driven 3D tilt on devices with a fine hover pointer
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        const tiltCards = gsap.utils.toArray<HTMLElement>('.tilt-3d')
+        tiltCards.forEach((card) => {
+          gsap.set(card, { transformPerspective: 1100 })
 
-        const xTo = gsap.quickTo(card, 'rotationY', { duration: 0.45, ease: 'power3.out' })
-        const yTo = gsap.quickTo(card, 'rotationX', { duration: 0.45, ease: 'power3.out' })
-        const liftTo = gsap.quickTo(card, 'y', { duration: 0.45, ease: 'power3.out' })
+          const xTo = gsap.quickTo(card, 'rotationY', { duration: 0.45, ease: 'power3.out' })
+          const yTo = gsap.quickTo(card, 'rotationX', { duration: 0.45, ease: 'power3.out' })
+          const liftTo = gsap.quickTo(card, 'y', { duration: 0.45, ease: 'power3.out' })
 
-        const onMove = (e: MouseEvent) => {
-          const rect = card.getBoundingClientRect()
-          const relX = (e.clientX - rect.left) / rect.width - 0.5
-          const relY = (e.clientY - rect.top) / rect.height - 0.5
+          const onMove = (e: MouseEvent) => {
+            const rect = card.getBoundingClientRect()
+            const relX = (e.clientX - rect.left) / rect.width - 0.5
+            const relY = (e.clientY - rect.top) / rect.height - 0.5
 
-          xTo(relX * 7)
-          yTo(relY * -7)
-          liftTo(-5)
-        }
+            xTo(relX * 7)
+            yTo(relY * -7)
+            liftTo(-5)
+          }
 
-        const onLeave = () => {
-          xTo(0)
-          yTo(0)
-          liftTo(0)
-        }
+          const onLeave = () => {
+            xTo(0)
+            yTo(0)
+            liftTo(0)
+          }
 
-        card.addEventListener('mousemove', onMove)
-        card.addEventListener('mouseleave', onLeave)
-      })
+          card.addEventListener('mousemove', onMove)
+          card.addEventListener('mouseleave', onLeave)
+        })
+      }
     })
 
     ScrollTrigger.refresh()
