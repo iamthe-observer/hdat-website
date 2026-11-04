@@ -2,18 +2,28 @@
   <header
     class="fixed top-0 left-0 w-full z-50 transition-[background-color,padding,border-color,box-shadow] duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]"
     :class="[
-      isScrolled || menuOpen
+      menuOpen
         ? 'bg-[#FAF8F5] py-3.5 border-b border-[#E6E1D7] shadow-[0_12px_34px_-12px_rgba(17,22,27,0.08)]'
-        : 'bg-transparent py-6 border-b border-transparent'
+        : isScrolled
+          ? isTransportPage
+            ? 'bg-[#192027] py-3.5 border-b border-white/10 shadow-[0_12px_34px_-12px_rgba(0,0,0,0.5)]'
+            : 'bg-[#FAF8F5] py-3.5 border-b border-[#E6E1D7] shadow-[0_12px_34px_-12px_rgba(17,22,27,0.08)]'
+          : 'bg-transparent py-6 border-b border-transparent'
     ]"
   >
     <div class="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between gap-4 relative">
       <!-- Left: Executive Brand / Wordmark -->
       <NuxtLink to="/" class="group flex flex-col focus:outline-none shrink-0 z-20" @click="closeMenu">
-        <span class="font-serif text-2xl md:text-3xl tracking-tight text-[#11161B] group-hover:text-accent-purple transition-colors duration-300">
+        <span
+          class="font-serif text-2xl md:text-3xl tracking-tight group-hover:text-accent-purple transition-colors duration-300"
+          :class="isTransportPage && !menuOpen ? 'text-white' : 'text-[#11161B]'"
+        >
           Hon. Dorcas Affo-Toffey
         </span>
-        <span class="font-mono text-[10px] tracking-widest uppercase text-[#11161B]/60 flex items-center gap-2 mt-0.5">
+        <span
+          class="font-mono text-[10px] tracking-widest uppercase flex items-center gap-2 mt-0.5 transition-colors duration-300"
+          :class="isTransportPage && !menuOpen ? 'text-white/75' : 'text-[#11161B]/60'"
+        >
           <span class="w-1.5 h-1.5 rounded-full bg-accent-purple animate-pulse"></span>
           MP · Jomoro | Dep. Minister of Transport
         </span>
@@ -34,9 +44,13 @@
               :to="link.href"
               class="nav-stagger-link font-sans text-xs uppercase tracking-widest font-medium transition-colors relative py-1 whitespace-nowrap inline-block"
               :class="[
-                route.path === link.href
-                  ? 'text-accent-purple font-semibold after:w-full'
-                  : 'text-[#11161B]/80 hover:text-accent-purple after:w-0 hover:after:w-full'
+                isTransportPage
+                  ? route.path === link.href
+                    ? 'text-white font-semibold after:w-full'
+                    : 'text-white/85 hover:text-white after:w-0 hover:after:w-full'
+                  : route.path === link.href
+                    ? 'text-accent-purple font-semibold after:w-full'
+                    : 'text-[#11161B]/80 hover:text-accent-purple after:w-0 hover:after:w-full'
               ]"
             >
               {{ link.name }}
@@ -143,13 +157,15 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch, onMounted, onUnmounted } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import gsap from 'gsap'
 
 const route = useRoute()
 const isScrolled = ref(false)
 const menuOpen = ref(false)
+
+const isTransportPage = computed(() => route.path.startsWith('/transport'))
 
 const navGroupRef = ref<HTMLElement | null>(null)
 const hamburgerBtnRef = ref<HTMLElement | null>(null)
