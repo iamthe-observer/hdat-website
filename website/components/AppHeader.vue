@@ -54,14 +54,14 @@
           </div>
         </div>
 
-        <!-- Scrolled State (or Mobile): Stylish Architectural Hamburger Button -->
+        <!-- Scrolled State (or Mobile): Stylish Architectural Hamburger Button in Accent Purple -->
         <button
           ref="hamburgerBtnRef"
           @click="toggleMenu"
           aria-label="Toggle Navigation Menu"
-          class="md:opacity-0 md:pointer-events-none md:absolute md:right-0 inline-flex items-center gap-3 px-4 py-2.5 bg-[#11161B] hover:bg-accent-purple text-[#FAF8F5] border border-[#11161B] hover:border-accent-purple transition-colors duration-300 group focus:outline-none shadow-md z-20"
+          class="md:opacity-0 md:pointer-events-none md:absolute md:right-0 inline-flex items-center gap-3 px-4 py-2.5 bg-accent-purple hover:bg-accent-purple-dark text-white border border-accent-purple hover:border-accent-purple-dark hover:shadow-lg hover:shadow-accent-purple/25 transition-colors duration-300 group focus:outline-none shadow-md z-20"
         >
-          <span class="font-mono text-[10px] uppercase tracking-[0.22em] text-[#FAF8F5]/90 group-hover:text-white select-none">
+          <span class="font-mono text-[10px] uppercase tracking-[0.22em] text-white font-semibold select-none">
             {{ menuOpen ? 'Close' : 'Menu' }}
           </span>
           <div class="w-5 h-3 relative flex flex-col justify-between items-end">
@@ -198,13 +198,13 @@ const animateNavState = (scrolled: boolean) => {
       0
     )
 
-    // 2. Stylishly animate the hamburger button into view on the right
+    // 2. Stylishly animate the hamburger button into view FROM the right after a slight delay
     navTl.fromTo(
       burger,
       {
-        x: -24,
+        x: 48,
         opacity: 0,
-        scale: 0.82,
+        scale: 0.85,
         pointerEvents: 'none'
       },
       {
@@ -216,7 +216,7 @@ const animateNavState = (scrolled: boolean) => {
         ease: 'expo.out',
         overwrite: 'auto'
       },
-      0.14
+      0.32
     )
   } else {
     // Close menu if open when returning to top
@@ -226,9 +226,9 @@ const animateNavState = (scrolled: boolean) => {
     navTl.to(
       burger,
       {
-        x: 20,
+        x: 48,
         opacity: 0,
-        scale: 0.82,
+        scale: 0.85,
         pointerEvents: 'none',
         duration: 0.4,
         ease: 'power3.out',
@@ -322,8 +322,8 @@ onMounted(() => {
   if (window.innerWidth >= 768 && hamburgerBtnRef.value) {
     gsap.set(hamburgerBtnRef.value, {
       opacity: isScrolled.value ? 1 : 0,
-      x: isScrolled.value ? 0 : -24,
-      scale: isScrolled.value ? 1 : 0.82,
+      x: isScrolled.value ? 0 : 48,
+      scale: isScrolled.value ? 1 : 0.85,
       pointerEvents: isScrolled.value ? 'auto' : 'none'
     })
   }
