@@ -104,7 +104,8 @@
     >
       <div
         v-if="menuOpen"
-        class="fixed inset-x-0 top-[68px] bottom-0 z-40 bg-[#FAF8F5]/98 backdrop-blur-xl border-t border-[#E6E1D7] flex flex-col justify-between px-6 sm:px-12 md:px-20 py-10 overflow-y-auto"
+        class="fixed inset-x-0 top-[68px] bottom-0 z-40 bg-white/95 backdrop-blur-xl border-t border-[#E6E1D7] flex flex-col justify-between px-6 sm:px-12 md:px-20 py-10 overflow-y-auto shadow-2xl"
+        style="background-color: rgba(255, 255, 255, 0.96);"
       >
         <!-- Subtle background grid -->
         <div class="absolute inset-0 pointer-events-none opacity-30 bg-[radial-gradient(#7C3AED_0.75px,transparent_0.75px)] [background-size:24px_24px]"></div>
