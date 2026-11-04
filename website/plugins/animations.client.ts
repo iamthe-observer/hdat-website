@@ -1,3 +1,4 @@
+import { nextTick } from 'vue'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
@@ -7,6 +8,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   gsap.registerPlugin(ScrollTrigger)
 
   let ctx: gsap.Context | null = null
+  let isInitialLoad = true
 
   const initAnimations = () => {
     // Clean up previous page's GSAP tweens & ScrollTriggers before re-initializing
@@ -20,13 +22,14 @@ export default defineNuxtPlugin((nuxtApp) => {
       const heroHeaders = gsap.utils.toArray<HTMLElement>('.gsap-hero-stagger')
       heroHeaders.forEach((header) => {
         const els = header.querySelectorAll<HTMLElement>('.hero-el')
-        if (els.length) {
+        if (els.length && header.dataset.heroAnimated !== 'true') {
+          header.dataset.heroAnimated = 'true'
           gsap.fromTo(
             els,
             {
               opacity: 0,
-              y: 44,
-              rotationX: 12,
+              y: 36,
+              rotationX: 10,
               scale: 0.98,
               transformPerspective: 1100,
               transformOrigin: '0% 100%'
@@ -36,8 +39,8 @@ export default defineNuxtPlugin((nuxtApp) => {
               y: 0,
               rotationX: 0,
               scale: 1,
-              duration: 1.15,
-              stagger: 0.12,
+              duration: 1.05,
+              stagger: 0.1,
               ease: 'expo.out',
               clearProps: 'rotationX,scale,transformPerspective,transformOrigin'
             }
@@ -64,6 +67,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       // ── 1. Viewport-Entry 3D Editorial Reveals (.reveal-3d) ────────────────
       const elements3D = gsap.utils.toArray<HTMLElement>('.reveal-3d')
       elements3D.forEach((el, index) => {
+        if (el.dataset.revealAnimated === 'true') return
         gsap.fromTo(
           el,
           {
@@ -83,10 +87,13 @@ export default defineNuxtPlugin((nuxtApp) => {
             delay: (index % 2) * 0.08,
             ease: 'expo.out',
             clearProps: 'rotationX,scale,transformPerspective,transformOrigin',
+            onStart: () => {
+              el.dataset.revealAnimated = 'true'
+            },
             scrollTrigger: {
               trigger: el,
               start: 'top 89%',
-              toggleActions: 'play none none none'
+               once: true
             }
           }
         )
@@ -95,6 +102,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       // ── 2. Staggered Card & Element Grids (.stagger-parent -> .stagger-item)
       const staggerContainers = gsap.utils.toArray<HTMLElement>('.stagger-parent')
       staggerContainers.forEach((container) => {
+        if (container.dataset.staggerAnimated === 'true') return
         const items = container.querySelectorAll<HTMLElement>('.stagger-item')
         if (!items.length) return
 
@@ -117,10 +125,13 @@ export default defineNuxtPlugin((nuxtApp) => {
             stagger: 0.1,
             ease: 'expo.out',
             clearProps: 'rotationX,scale,transformPerspective,transformOrigin',
+            onStart: () => {
+              container.dataset.staggerAnimated = 'true'
+            },
             scrollTrigger: {
               trigger: container,
               start: 'top 88%',
-              toggleActions: 'play none none none'
+              once: true
             }
           }
         )
@@ -357,16 +368,32 @@ export default defineNuxtPlugin((nuxtApp) => {
     ScrollTrigger.refresh()
   }
 
-  // Run on initial mount and after page route transitions complete
+  // Clean up previous page's animations when route leave starts
+  nuxtApp.hook('page:start', () => {
+    if (!isInitialLoad && ctx) {
+      ctx.revert()
+      ctx = null
+    }
+  })
+
+  // Run once on initial mount
   nuxtApp.hook('app:mounted', () => {
-    setTimeout(initAnimations, 100)
+    nextTick(() => {
+      initAnimations()
+      isInitialLoad = false
+    })
   })
 
+  // Run once when a new page mounts during client-side navigation
   nuxtApp.hook('page:finish', () => {
-    setTimeout(initAnimations, 150)
+    if (isInitialLoad) return
+    nextTick(() => {
+      initAnimations()
+    })
   })
 
+  // Only refresh ScrollTrigger positions after CSS transition settles (never re-trigger entry animations)
   nuxtApp.hook('page:transition:finish', () => {
-    setTimeout(initAnimations, 60)
+    ScrollTrigger.refresh()
   })
 })
