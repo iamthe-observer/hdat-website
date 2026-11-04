@@ -117,48 +117,71 @@
 
       <!-- Section 3: Credentials Matrix -->
       <div class="gsap-scrub-card bg-[#11161B] text-white p-6 sm:p-12 border-2 border-accent-purple/40 shadow-2xl">
-        <div class="max-w-3xl space-y-3 sm:space-y-4 reveal-3d">
-          <span class="font-mono text-[11px] sm:text-xs text-accent-purple uppercase tracking-widest block">
-            Lorem Ipsum Dolor
-          </span>
-          <h2 class="font-serif text-2xl sm:text-4xl text-[#FAF8F5] leading-snug">
-            Sed Ut Perspiciatis Unde Omnis
-          </h2>
-          <p class="font-sans text-sm sm:text-base text-[#EAE5DC]/80 leading-relaxed">
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur:
-          </p>
-        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+          <div class="lg:col-span-8">
+            <div class="max-w-3xl space-y-3 sm:space-y-4 reveal-3d">
+              <span class="font-mono text-[11px] sm:text-xs text-accent-purple uppercase tracking-widest block">
+                Lorem Ipsum Dolor
+              </span>
+              <h2 class="font-serif text-2xl sm:text-4xl text-[#FAF8F5] leading-snug">
+                Sed Ut Perspiciatis Unde Omnis
+              </h2>
+              <p class="font-sans text-sm sm:text-base text-[#EAE5DC]/80 leading-relaxed">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur:
+              </p>
+            </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10 font-sans text-sm stagger-parent">
-          <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
-            <span class="text-accent-purple text-lg">■</span>
-            <div>
-              <strong class="text-white block font-display">Lorem Ipsum Dolor Sit Amet</strong>
-              <span class="text-white/60 text-xs">Consectetur adipiscing elit (2024)</span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10 font-sans text-sm stagger-parent">
+              <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
+                <span class="text-accent-purple text-lg">■</span>
+                <div>
+                  <strong class="text-white block font-display">Lorem Ipsum Dolor Sit Amet</strong>
+                  <span class="text-white/60 text-xs">Consectetur adipiscing elit (2024)</span>
+                </div>
+              </div>
+
+              <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
+                <span class="text-accent-purple text-lg">■</span>
+                <div>
+                  <strong class="text-white block font-display">Sed Do Eiusmod Tempor Incididunt</strong>
+                  <span class="text-white/60 text-xs">Ut labore et dolore magna aliqua</span>
+                </div>
+              </div>
+
+              <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
+                <span class="text-accent-purple text-lg">■</span>
+                <div>
+                  <strong class="text-white block font-display">Ut Enim Ad Minim Veniam</strong>
+                  <span class="text-white/60 text-xs">Quis nostrud exercitation ullamco</span>
+                </div>
+              </div>
+
+              <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
+                <span class="text-accent-purple text-lg">■</span>
+                <div>
+                  <strong class="text-white block font-display">Duis Aute Irure Dolor In Reprehenderit</strong>
+                  <span class="text-white/60 text-xs">Excepteur sint occaecat cupidatat</span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
-            <span class="text-accent-purple text-lg">■</span>
-            <div>
-              <strong class="text-white block font-display">Sed Do Eiusmod Tempor Incididunt</strong>
-              <span class="text-white/60 text-xs">Ut labore et dolore magna aliqua</span>
-            </div>
-          </div>
-
-          <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
-            <span class="text-accent-purple text-lg">■</span>
-            <div>
-              <strong class="text-white block font-display">Ut Enim Ad Minim Veniam</strong>
-              <span class="text-white/60 text-xs">Quis nostrud exercitation ullamco</span>
-            </div>
-          </div>
-
-          <div class="stagger-item tilt-3d card-3d-interactive flex items-start gap-3 p-4 bg-white/5 border border-white/10 hover:border-accent-purple/60">
-            <span class="text-accent-purple text-lg">■</span>
-            <div>
-              <strong class="text-white block font-display">Duis Aute Irure Dolor In Reprehenderit</strong>
-              <span class="text-white/60 text-xs">Excepteur sint occaecat cupidatat</span>
+          <!-- Right: Executive Portrait Frame (HDAT2.jpg) -->
+          <div class="lg:col-span-4">
+            <div class="tilt-3d card-3d-interactive relative aspect-[3/4] max-w-[280px] mx-auto lg:max-w-none bg-[#192027] border border-accent-purple/40 p-2 overflow-hidden shadow-xl">
+              <img
+                src="/images/HDAT2.jpg"
+                alt="Hon. Dorcas Affo-Toffey"
+                class="gsap-parallax-img w-full h-full object-cover object-top"
+              />
+              <div class="absolute inset-x-2 bottom-2 bg-black/75 backdrop-blur-md p-3 border-t border-white/10">
+                <span class="font-mono text-[9px] text-accent-purple uppercase tracking-widest block">
+                  Executive Profile
+                </span>
+                <span class="font-serif text-sm text-white block mt-0.5">
+                  Hon. Dorcas Affo-Toffey
+                </span>
+              </div>
             </div>
           </div>
         </div>

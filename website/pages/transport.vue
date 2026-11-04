@@ -20,9 +20,28 @@
       </div>
 
       <!-- Distinction Spotlight -->
-      <div class="gsap-scrub-card p-6 sm:p-12 bg-[#192027] border-2 border-accent-purple/40 mb-14 sm:mb-24 shadow-2xl">
+      <div class="gsap-scrub-card p-6 sm:p-10 md:p-12 bg-[#192027] border-2 border-accent-purple/40 mb-14 sm:mb-24 shadow-2xl">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center">
-          <div class="lg:col-span-8 space-y-3 sm:space-y-4">
+          <!-- Executive Portrait Frame -->
+          <div class="lg:col-span-3">
+            <div class="tilt-3d card-3d-interactive relative aspect-[3/4] max-w-[260px] mx-auto lg:max-w-none bg-[#11161B] border border-accent-purple/50 p-1.5 overflow-hidden shadow-xl">
+              <img
+                src="/images/HDAT2.jpg"
+                alt="Hon. Dorcas Affo-Toffey — Deputy Minister of Transport"
+                class="gsap-parallax-img w-full h-full object-cover object-top"
+              />
+              <div class="absolute inset-x-1.5 bottom-1.5 bg-black/75 backdrop-blur-sm px-3 py-2 border-t border-white/10">
+                <span class="font-mono text-[9px] uppercase tracking-widest text-accent-purple block">
+                  Deputy Minister
+                </span>
+                <span class="font-serif text-xs text-white/90 block">
+                  Ministry of Transport
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 space-y-3 sm:space-y-4">
             <span class="font-mono text-[11px] sm:text-xs uppercase tracking-widest text-accent-purple block">
               Lorem Ipsum Recognition
             </span>
@@ -33,7 +52,7 @@
               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
           </div>
-          <div class="lg:col-span-4 lg:text-right">
+          <div class="lg:col-span-3 lg:text-right">
             <div class="tilt-3d card-3d-interactive w-full sm:w-auto inline-block p-5 sm:p-6 bg-black/40 border border-accent-purple text-center">
               <span class="font-display font-extrabold text-4xl sm:text-5xl text-accent-purple block">2026</span>
               <span class="font-mono text-xs text-white uppercase tracking-wider block mt-1">Lorem Honours</span>

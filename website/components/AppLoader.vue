@@ -220,8 +220,8 @@ const slides = [
   },
   {
     code: 'IMG // 05',
-    label: 'Placeholder 05',
-    image: null as string | null,
+    label: 'Executive Portrait',
+    image: '/images/HDAT2.jpg',
     colors: ['#1E0B24', '#4A155B', '#9333EA']
   },
   {

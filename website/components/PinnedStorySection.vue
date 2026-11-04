@@ -21,13 +21,36 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-start">
         
         <!-- Left: Sticky Anchor Quote & Title Badge -->
-        <div class="lg:col-span-5 lg:sticky lg:top-32 space-y-6 sm:space-y-8">
-          <div class="reveal-3d tilt-3d card-3d-interactive bg-[#FAF8F5] p-6 sm:p-8 md:p-10 border border-[#E6E1D7] shadow-sm relative">
+        <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-5 sm:space-y-6">
+          <!-- Editorial Portrait Frame (HDAT2.jpg) -->
+          <div class="reveal-3d tilt-3d card-3d-interactive bg-[#11161B] border-2 border-accent-purple/30 p-2 shadow-xl overflow-hidden relative aspect-[4/4.4] sm:aspect-[4/4.2]">
+            <img
+              src="/images/HDAT2.jpg"
+              alt="Hon. Dorcas Affo-Toffey"
+              class="gsap-parallax-img w-full h-full object-cover object-top"
+            />
+            <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/85 via-black/40 to-transparent pointer-events-none"></div>
+            <div class="absolute bottom-3.5 left-3.5 right-3.5 sm:bottom-4 sm:left-4 sm:right-4 flex items-end justify-between text-white">
+              <div>
+                <span class="font-mono text-[9px] sm:text-[10px] text-accent-purple uppercase tracking-widest block">
+                  Hon. Dorcas Affo-Toffey
+                </span>
+                <span class="font-serif text-sm sm:text-base text-white/90">
+                  MP for Jomoro · Deputy Minister of Transport
+                </span>
+              </div>
+              <span class="font-mono text-[9px] px-2 py-0.5 bg-accent-purple text-white uppercase tracking-widest">
+                Profile
+              </span>
+            </div>
+          </div>
+
+          <div class="reveal-3d tilt-3d card-3d-interactive bg-[#FAF8F5] p-6 sm:p-8 border border-[#E6E1D7] shadow-sm relative">
             <div class="absolute -top-3.5 left-5 sm:left-8 bg-accent-purple text-white px-3 py-1 font-mono text-[9px] sm:text-[10px] uppercase tracking-widest">
               Lorem Ipsum Dolor
             </div>
 
-            <p class="font-serif italic text-xl sm:text-2xl md:text-3xl text-[#11161B] leading-snug">
+            <p class="font-serif italic text-xl sm:text-2xl text-[#11161B] leading-snug">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.”
             </p>
 
@@ -40,9 +63,11 @@
                   Duis aute irure dolor in reprehenderit
                 </span>
               </div>
-              <div class="w-9 h-9 sm:w-10 sm:h-10 shrink-0 rounded-full border border-accent-purple/30 flex items-center justify-center text-accent-purple font-serif text-base sm:text-lg">
-                LIP
-              </div>
+              <img
+                src="/images/HDAT2.jpg"
+                alt="Hon. Dorcas Affo-Toffey"
+                class="w-10 h-10 sm:w-11 sm:h-11 shrink-0 rounded-full object-cover object-top border-2 border-accent-purple/40"
+              />
             </div>
           </div>
 
