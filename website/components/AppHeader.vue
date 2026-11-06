@@ -12,29 +12,21 @@
     ]"
   >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between gap-3 relative">
-      <!-- Left: Executive Brand / Wordmark with Ministerial Monogram -->
-      <NuxtLink to="/" class="group flex items-center gap-2.5 sm:gap-3.5 focus:outline-none shrink-0 z-30" @click="closeMenu">
-        <AppLogo
-          size="34"
-          variant="mark"
-          color-mode="gold"
-          class="shrink-0 transition-transform duration-300 group-hover:scale-105 drop-shadow-[0_2px_8px_rgba(212,175,55,0.25)]"
-        />
-        <div class="flex flex-col">
-          <span
-            class="font-serif text-xl sm:text-2xl md:text-3xl tracking-tight group-hover:text-accent-purple transition-colors duration-300 leading-none"
-            :class="isTransportPage && !menuOpen ? 'text-white' : 'text-[#11161B]'"
-          >
-            Hon. Dorcas Affo-Toffey
-          </span>
-          <span
-            class="font-mono text-[8.5px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase flex items-center gap-1.5 sm:gap-2 mt-1 transition-colors duration-300"
-            :class="isTransportPage && !menuOpen ? 'text-white/75' : 'text-[#11161B]/60'"
-          >
-            <span class="w-1.5 h-1.5 rounded-full bg-accent-purple animate-pulse shrink-0"></span>
-            <span class="truncate">MP · Jomoro | Dep. Minister of Transport</span>
-          </span>
-        </div>
+      <!-- Left: Executive Brand / Wordmark -->
+      <NuxtLink to="/" class="group flex flex-col focus:outline-none shrink-0 z-30" @click="closeMenu">
+        <span
+          class="font-serif text-xl sm:text-2xl md:text-3xl tracking-tight group-hover:text-accent-purple transition-colors duration-300 leading-none"
+          :class="isTransportPage && !menuOpen ? 'text-white' : 'text-[#11161B]'"
+        >
+          Hon. Dorcas Affo-Toffey
+        </span>
+        <span
+          class="font-mono text-[8.5px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase flex items-center gap-1.5 sm:gap-2 mt-1 transition-colors duration-300"
+          :class="isTransportPage && !menuOpen ? 'text-white/75' : 'text-[#11161B]/60'"
+        >
+          <span class="w-1.5 h-1.5 rounded-full bg-accent-purple animate-pulse shrink-0"></span>
+          <span class="truncate">MP · Jomoro | Dep. Minister of Transport</span>
+        </span>
       </NuxtLink>
 
       <!-- Center & Right Container -->

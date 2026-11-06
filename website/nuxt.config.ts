@@ -17,7 +17,6 @@ export default defineNuxtConfig({
         { name: 'theme-color', content: '#FAF8F5' }
       ],
       link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/brand/dat_monogram_gold_transparent.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
