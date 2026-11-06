@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Royal Gold Shimmer Gradients -->
+    <linearGradient id="goldLinear" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#FFF3C4"/>
+      <stop offset="25%" stop-color="#E7C377"/>
+      <stop offset="50%" stop-color="#BF9035"/>
+      <stop offset="75%" stop-color="#DFBA69"/>
+      <stop offset="100%" stop-color="#9E6E1D"/>
+    </linearGradient>
+
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#E7C377"/>
+      <stop offset="70%" stop-color="#9E6E1D"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+
+    <linearGradient id="purpleRoyal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+
+    <radialGradient id="vignetteDark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1A202C"/>
+      <stop offset="70%" stop-color="#0E1217"/>
+      <stop offset="100%" stop-color="#080A0D"/>
+    </radialGradient>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="monogramShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#D4AF37" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Luxurious Background Canvas -->
+  <rect width="1200" height="1200" fill="url(#vignetteDark)"/>
+
+  <!-- Subtle Micro-Geometric Guilloche Accent in Background -->
+  <circle cx="600" cy="540" r="440" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.15" stroke-dasharray="4 8"/>
+  <circle cx="600" cy="540" r="400" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.2"/>
+  <circle cx="600" cy="540" r="392" stroke="url(#goldLinear)" stroke-width="0.5" stroke-opacity="0.1"/>
+
+  <!-- Ministerial Star of Ghana Crest at Apex -->
+  <g transform="translate(600, 195)" filter="url(#softGlow)">
+    <!-- 4-point Diamond Star & Crest Accent -->
+    <path d="M0 -32 L8 -8 L32 0 L8 8 L0 32 L-8 8 L-32 0 L-8 -8 Z" fill="url(#goldLinear)"/>
+    <circle cx="0" cy="0" r="3" fill="#FFFFFF"/>
+    <!-- Radiating ticks -->
+    <line x1="0" y1="-44" x2="0" y2="-38" stroke="url(#goldLinear)" stroke-width="1.5"/>
+    <line x1="0" y1="38" x2="0" y2="44" stroke="url(#goldLinear)" stroke-width="1.5"/>
+    <line x1="-44" y1="0" x2="-38" y2="0" stroke="url(#goldLinear)" stroke-width="1.5"/>
+    <line x1="38" y1="0" x2="44" y2="0" stroke="url(#goldLinear)" stroke-width="1.5"/>
+  </g>
+
+  <!-- THE INTERLOCKING "DAT" MONOGRAM (Center: 600, 540) -->
+  <g filter="url(#monogramShadow)">
+
+    <!-- ==================== LETTER "D" (LEFT WING) ==================== -->
+    <!-- D vertical spine with classical Didot serifs and sweeping arch -->
+    <!-- D Spine -->
+    <path d="M 390 320 
+             L 435 320 
+             L 435 760 
+             L 390 760 
+             L 390 776 
+             L 510 776 
+             L 510 760 
+             L 465 760 
+             L 465 336 
+             L 510 336 
+             L 510 320 
+             Z" 
+          fill="url(#goldLinear)"/>
+
+    <!-- D Outer Curve: Sweeps majestically from top left (x:450, y:320) through x:680 to bottom (x:450, y:776) -->
+    <!-- It has negative cutouts where it weaves with the A and T -->
+    <path d="M 465 320 
+             C 610 320, 715 410, 715 540 
+             C 715 670, 610 776, 465 776 
+             L 465 744 
+             C 585 744, 675 650, 675 540 
+             C 675 430, 585 352, 465 352 
+             Z" 
+          fill="url(#goldSheen)"/>
+
+    <!-- ==================== LETTER "A" (CENTRAL PEAK) ==================== -->
+    <!-- Central triangular majestic A spanning from bottom left (350, 776) to apex (600, 260) to bottom right (850, 776) -->
+    <!-- Left diagonal leg (fine hairline stroke in classical Didot style) -->
+    <polygon points="585,290 600,260 615,290 415,776 370,776" fill="url(#goldLinear)"/>
+
+    <!-- Right diagonal leg (bold stately stem) -->
+    <polygon points="590,260 625,260 840,760 870,760 870,776 770,776 770,760 798,760 645,360 590,260" fill="url(#goldLinear)"/>
+
+    <!-- A Horizontal Crossbar (Imperial lintel connecting at y:580) with woven underpass -->
+    <rect x="450" y="586" width="310" height="18" rx="2" fill="url(#goldLinear)"/>
+    <!-- Small jewel/accent at center of crossbar -->
+    <polygon points="600,578 610,595 600,612 590,595" fill="url(#goldSheen)"/>
+
+    <!-- Apex Finial on A -->
+    <path d="M 570 260 L 630 260 L 600 240 Z" fill="url(#goldLinear)"/>
+
+    <!-- ==================== LETTER "T" (CROWN & SPINDLE) ==================== -->
+    <!-- Top horizontal lintel of T crowning the composition at y:320-340 -->
+    <!-- Elegant bilateral serifs at terminals -->
+    <path d="M 410 328
+             L 410 368
+             L 426 368
+             L 426 344
+             L 774 344
+             L 774 368
+             L 790 368
+             L 790 328
+             L 774 328
+             L 774 332
+             L 426 332
+             L 426 328
+             Z" 
+          fill="url(#goldSheen)"/>
+
+    <!-- T Vertical Pillar descending through the center (x: 590 to 610) -->
+    <!-- Drops from y:344 down to y:776 with an imperial base terminal -->
+    <path d="M 592 344
+             L 608 344
+             L 608 576
+             L 592 576
+             Z"
+          fill="url(#goldLinear)"/>
+
+    <path d="M 592 606
+             L 608 606
+             L 608 760
+             L 580 760
+             L 580 776
+             L 620 776
+             L 620 760
+             L 608 760
+             L 592 760
+             Z"
+          fill="url(#goldLinear)"/>
+  </g>
+
+  <!-- Ministerial Title & Typography in Stately Spaced Lettering -->
+  <g text-anchor="middle">
+    <!-- Main Wordmark -->
+    <text x="600" y="910" 
+          font-family="'Cormorant Garamond', 'Cinzel', 'Playfair Display', serif" 
+          font-size="34" 
+          font-weight="600" 
+          letter-spacing="0.28em" 
+          fill="url(#goldLinear)">
+      DORCAS AFFO-TOFFEY
+    </text>
+
+    <!-- Thin Divider with Gold Diamond -->
+    <line x1="380" y1="945" x2="570" y2="945" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.4"/>
+    <polygon points="600,941 604,945 600,949 596,945" fill="url(#goldLinear)"/>
+    <line x1="630" y1="945" x2="820" y2="945" stroke="url(#goldLinear)" stroke-width="1" stroke-opacity="0.4"/>
+
+    <!-- Ministerial Subtitle -->
+    <text x="600" y="990" 
+          font-family="'Plus Jakarta Sans', 'Inter', 'Montserrat', sans-serif" 
+          font-size="14" 
+          font-weight="600" 
+          letter-spacing="0.38em" 
+          fill="#EAE5DC" 
+          fill-opacity="0.8">
+      MEMBER OF PARLIAMENT · DEPUTY MINISTER
+    </text>
+
+    <text x="600" y="1022" 
+          font-family="'JetBrains Mono', monospace" 
+          font-size="11" 
+          font-weight="500" 
+          letter-spacing="0.3em" 
+          fill="#A855F7">
+      REPUBLIC OF GHANA
+    </text>
+  </g>
+</svg>

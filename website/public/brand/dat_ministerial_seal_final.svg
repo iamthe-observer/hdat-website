@@ -1,0 +1,923 @@
+<svg width="1200" height="1200" viewBox="0 0 1200 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <linearGradient id="goldLuxe" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF0"/>
+      <stop offset="12%" stop-color="#F5D77F"/>
+      <stop offset="35%" stop-color="#D4AF37"/>
+      <stop offset="65%" stop-color="#996515"/>
+      <stop offset="85%" stop-color="#E5C158"/>
+      <stop offset="100%" stop-color="#FFF5D2"/>
+    </linearGradient>
+
+    <linearGradient id="goldLight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#E5C158"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+
+    <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#F5D77F"/>
+      <stop offset="50%" stop-color="#FFFDF0"/>
+      <stop offset="75%" stop-color="#F5D77F"/>
+      <stop offset="100%" stop-color="#D4AF37" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="purpleRoyalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333EA"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#4C1D95"/>
+    </linearGradient>
+
+    <radialGradient id="vignetteDark" cx="50%" cy="46%" r="65%">
+      <stop offset="0%" stop-color="#191328"/>
+      <stop offset="40%" stop-color="#100C1B"/>
+      <stop offset="80%" stop-color="#08060D"/>
+      <stop offset="100%" stop-color="#030205"/>
+    </radialGradient>
+
+    <filter id="royalGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000000" flood-opacity="0.85"/>
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#D4AF37" flood-opacity="0.3"/>
+    </filter>
+  
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="1200" fill="#0A0712"/>
+
+  <!-- Outer Concentric Seal Enclosure -->
+  <g filter="url(#royalGlow)">
+    <!-- Outer Gold Bezel -->
+    <circle cx="600" cy="600" r="510" stroke="url(#goldLuxe)" stroke-width="2.5" fill="#120D1F"/>
+    <circle cx="600" cy="600" r="498" stroke="url(#goldLuxe)" stroke-width="1" stroke-opacity="0.4" fill="none"/>
+    <circle cx="600" cy="600" r="488" stroke="url(#goldLuxe)" stroke-width="1.5" stroke-dasharray="3 7" fill="none"/>
+
+    <!-- Circular Banner Rim (Dark Imperial Violet) -->
+    <circle cx="600" cy="600" r="440" stroke="url(#purpleRoyalGrad)" stroke-width="70" fill="none"/>
+
+    <!-- Inner Gold Bezel -->
+    <circle cx="600" cy="600" r="395" stroke="url(#goldLuxe)" stroke-width="2" fill="none"/>
+    <circle cx="600" cy="600" r="385" stroke="url(#goldLuxe)" stroke-width="1" stroke-opacity="0.4" fill="#161024"/>
+
+    <!-- Radial Guilloche Rays -->
+    <g opacity="0.16">
+      <line x1="600" y1="600" x2="980.00" y2="600.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="976.75" y2="649.60" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="967.05" y2="698.35" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="951.07" y2="745.42" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="929.09" y2="790.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="901.47" y2="831.33" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="868.70" y2="868.70" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="831.33" y2="901.47" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="790.00" y2="929.09" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="745.42" y2="951.07" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="698.35" y2="967.05" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="649.60" y2="976.75" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="600.00" y2="980.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="550.40" y2="976.75" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="501.65" y2="967.05" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="454.58" y2="951.07" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="410.00" y2="929.09" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="368.67" y2="901.47" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="331.30" y2="868.70" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="298.53" y2="831.33" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="270.91" y2="790.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="248.93" y2="745.42" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="232.95" y2="698.35" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="223.25" y2="649.60" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="220.00" y2="600.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="223.25" y2="550.40" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="232.95" y2="501.65" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="248.93" y2="454.58" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="270.91" y2="410.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="298.53" y2="368.67" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="331.30" y2="331.30" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="368.67" y2="298.53" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="410.00" y2="270.91" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="454.58" y2="248.93" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="501.65" y2="232.95" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="550.40" y2="223.25" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="600.00" y2="220.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="649.60" y2="223.25" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="698.35" y2="232.95" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="745.42" y2="248.93" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="790.00" y2="270.91" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="831.33" y2="298.53" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="868.70" y2="331.30" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="901.47" y2="368.67" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="929.09" y2="410.00" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="951.07" y2="454.58" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="967.05" y2="501.65" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+      <line x1="600" y1="600" x2="976.75" y2="550.40" stroke="url(#goldLuxe)" stroke-width="0.75"/>
+    </g>
+
+    <!-- Circular Text Inscriptions -->
+    <text x="201.22" y="414.05" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(295.00, 201.22, 414.05)">H</text>
+      <text x="211.85" y="392.79" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(298.10, 211.85, 392.79)">O</text>
+      <text x="223.60" y="372.13" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(301.19, 223.60, 372.13)">N</text>
+      <text x="236.45" y="352.14" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(304.29, 236.45, 352.14)">.</text>
+      <text x="250.37" y="332.87" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(307.38, 250.37, 332.87)"> </text>
+      <text x="265.30" y="314.38" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(310.48, 265.30, 314.38)">D</text>
+      <text x="281.21" y="296.73" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(313.57, 281.21, 296.73)">O</text>
+      <text x="298.05" y="279.96" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(316.67, 298.05, 279.96)">R</text>
+      <text x="315.78" y="264.12" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(319.76, 315.78, 264.12)">C</text>
+      <text x="334.33" y="249.26" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(322.86, 334.33, 249.26)">A</text>
+      <text x="353.65" y="235.43" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(325.95, 353.65, 235.43)">S</text>
+      <text x="373.70" y="222.66" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(329.05, 373.70, 222.66)"> </text>
+      <text x="394.40" y="210.99" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(332.14, 394.40, 210.99)">A</text>
+      <text x="415.71" y="200.46" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(335.24, 415.71, 200.46)">F</text>
+      <text x="437.55" y="191.09" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(338.33, 437.55, 191.09)">F</text>
+      <text x="459.87" y="182.91" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(341.43, 459.87, 182.91)">O</text>
+      <text x="482.59" y="175.95" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(344.52, 482.59, 175.95)">-</text>
+      <text x="505.66" y="170.23" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(347.62, 505.66, 170.23)">T</text>
+      <text x="529.00" y="165.77" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(350.71, 529.00, 165.77)">O</text>
+      <text x="552.55" y="162.57" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(353.81, 552.55, 162.57)">F</text>
+      <text x="576.24" y="160.64" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(356.90, 576.24, 160.64)">F</text>
+      <text x="600.00" y="160.00" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(360.00, 600.00, 160.00)">E</text>
+      <text x="623.76" y="160.64" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(363.10, 623.76, 160.64)">Y</text>
+      <text x="647.45" y="162.57" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(366.19, 647.45, 162.57)"> </text>
+      <text x="671.00" y="165.77" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(369.29, 671.00, 165.77)">★</text>
+      <text x="694.34" y="170.23" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(372.38, 694.34, 170.23)"> </text>
+      <text x="717.41" y="175.95" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(375.48, 717.41, 175.95)">R</text>
+      <text x="740.13" y="182.91" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(378.57, 740.13, 182.91)">E</text>
+      <text x="762.45" y="191.09" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(381.67, 762.45, 191.09)">P</text>
+      <text x="784.29" y="200.46" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(384.76, 784.29, 200.46)">U</text>
+      <text x="805.60" y="210.99" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(387.86, 805.60, 210.99)">B</text>
+      <text x="826.30" y="222.66" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(390.95, 826.30, 222.66)">L</text>
+      <text x="846.35" y="235.43" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(394.05, 846.35, 235.43)">I</text>
+      <text x="865.67" y="249.26" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(397.14, 865.67, 249.26)">C</text>
+      <text x="884.22" y="264.12" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(400.24, 884.22, 264.12)"> </text>
+      <text x="901.95" y="279.96" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(403.33, 901.95, 279.96)">O</text>
+      <text x="918.79" y="296.73" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(406.43, 918.79, 296.73)">F</text>
+      <text x="934.70" y="314.38" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(409.52, 934.70, 314.38)"> </text>
+      <text x="949.63" y="332.87" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(412.62, 949.63, 332.87)">G</text>
+      <text x="963.55" y="352.14" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(415.71, 963.55, 352.14)">H</text>
+      <text x="976.40" y="372.13" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(418.81, 976.40, 372.13)">A</text>
+      <text x="988.15" y="392.79" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(421.90, 988.15, 392.79)">N</text>
+      <text x="998.78" y="414.05" 
+                  font-family="'Cormorant Garamond', serif" 
+                  font-size="19" 
+                  font-weight="700" 
+                  letter-spacing="0.22em" 
+                  fill="url(#goldLuxe)" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(425.00, 998.78, 414.05)">A</text>
+    <text x="201.22" y="785.95" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(65.00, 201.22, 785.95)">M</text>
+      <text x="211.59" y="806.73" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(61.98, 211.59, 806.73)">P</text>
+      <text x="223.03" y="826.92" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(58.95, 223.03, 826.92)"> </text>
+      <text x="235.52" y="846.49" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(55.93, 235.52, 846.49)">F</text>
+      <text x="249.03" y="865.37" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(52.91, 249.03, 865.37)">O</text>
+      <text x="263.52" y="883.51" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(49.88, 263.52, 883.51)">R</text>
+      <text x="278.94" y="900.86" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(46.86, 278.94, 900.86)"> </text>
+      <text x="295.25" y="917.38" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(43.84, 295.25, 917.38)">J</text>
+      <text x="312.41" y="933.01" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(40.81, 312.41, 933.01)">O</text>
+      <text x="330.38" y="947.71" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(37.79, 330.38, 947.71)">M</text>
+      <text x="349.09" y="961.45" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(34.77, 349.09, 961.45)">O</text>
+      <text x="368.50" y="974.18" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(31.74, 368.50, 974.18)">R</text>
+      <text x="388.56" y="985.87" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(28.72, 388.56, 985.87)">O</text>
+      <text x="409.21" y="996.48" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(25.70, 409.21, 996.48)"> </text>
+      <text x="430.38" y="1005.99" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(22.67, 430.38, 1005.99)">◆</text>
+      <text x="452.03" y="1014.37" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(19.65, 452.03, 1014.37)"> </text>
+      <text x="474.09" y="1021.60" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(16.63, 474.09, 1021.60)">D</text>
+      <text x="496.50" y="1027.65" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(13.60, 496.50, 1027.65)">E</text>
+      <text x="519.20" y="1032.52" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(10.58, 519.20, 1032.52)">P</text>
+      <text x="542.13" y="1036.18" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(7.56, 542.13, 1036.18)">U</text>
+      <text x="565.21" y="1038.62" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(4.53, 565.21, 1038.62)">T</text>
+      <text x="588.39" y="1039.85" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(1.51, 588.39, 1039.85)">Y</text>
+      <text x="611.61" y="1039.85" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-1.51, 611.61, 1039.85)"> </text>
+      <text x="634.79" y="1038.62" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-4.53, 634.79, 1038.62)">M</text>
+      <text x="657.87" y="1036.18" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-7.56, 657.87, 1036.18)">I</text>
+      <text x="680.80" y="1032.52" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-10.58, 680.80, 1032.52)">N</text>
+      <text x="703.50" y="1027.65" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-13.60, 703.50, 1027.65)">I</text>
+      <text x="725.91" y="1021.60" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-16.63, 725.91, 1021.60)">S</text>
+      <text x="747.97" y="1014.37" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-19.65, 747.97, 1014.37)">T</text>
+      <text x="769.62" y="1005.99" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-22.67, 769.62, 1005.99)">E</text>
+      <text x="790.79" y="996.48" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-25.70, 790.79, 996.48)">R</text>
+      <text x="811.44" y="985.87" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-28.72, 811.44, 985.87)"> </text>
+      <text x="831.50" y="974.18" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-31.74, 831.50, 974.18)">O</text>
+      <text x="850.91" y="961.45" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-34.77, 850.91, 961.45)">F</text>
+      <text x="869.62" y="947.71" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-37.79, 869.62, 947.71)"> </text>
+      <text x="887.59" y="933.01" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-40.81, 887.59, 933.01)">T</text>
+      <text x="904.75" y="917.38" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-43.84, 904.75, 917.38)">R</text>
+      <text x="921.06" y="900.86" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-46.86, 921.06, 900.86)">A</text>
+      <text x="936.48" y="883.51" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-49.88, 936.48, 883.51)">N</text>
+      <text x="950.97" y="865.37" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-52.91, 950.97, 865.37)">S</text>
+      <text x="964.48" y="846.49" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-55.93, 964.48, 846.49)">P</text>
+      <text x="976.97" y="826.92" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-58.95, 976.97, 826.92)">O</text>
+      <text x="988.41" y="806.73" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-61.98, 988.41, 806.73)">R</text>
+      <text x="998.78" y="785.95" 
+                  font-family="'Plus Jakarta Sans', sans-serif" 
+                  font-size="13.5" 
+                  font-weight="700" 
+                  letter-spacing="0.32em" 
+                  fill="#FAF8F5" 
+                  text-anchor="middle" 
+                  dominant-baseline="central" 
+                  transform="rotate(-65.00, 998.78, 785.95)">T</text>
+
+    <!-- CENTERPIECE CYPHER SCALED AND POSITIONED -->
+    <g transform="translate(600, 600) scale(0.72) translate(-600, -490)">
+      <!-- Star of Ghana -->
+      <g transform="translate(600, 140)">
+        <polygon points="0,-24 6,-7 24,-7 10,4 15,22 0,11 -15,22 -10,4 -24,-7 -6,-7" fill="url(#goldLuxe)"/>
+      </g>
+
+      <!-- D -->
+      <path d="M 285 315 L 345 315 L 345 665 L 285 665 L 285 680 L 395 680 L 395 665 L 365 665 L 365 330 L 395 330 L 395 315 L 285 315 Z" fill="url(#goldLuxe)"/>
+      <path d="M 365 315 C 490 315, 530 390, 530 495 C 530 600, 490 680, 365 680 L 365 655 C 465 655, 498 585, 498 495 C 498 405, 465 340, 365 340 Z" fill="url(#goldLuxe)"/>
+
+      <!-- A -->
+      <polygon points="595,232 600,210 605,232 460,680 436,680" fill="url(#goldLuxe)"/>
+      <polygon points="590,210 626,210 758,665 788,665 788,680 710,680 710,665 730,665 636,320 590,210" fill="url(#goldLuxe)"/>
+      <path d="M 574 210 L 626 210 L 600 192 Z" fill="url(#goldLuxe)"/>
+      <rect x="475" y="525" width="220" height="15" rx="1.5" fill="url(#goldLuxe)"/>
+
+      <!-- T -->
+      <path d="M 680 315 L 915 315 L 915 352 L 902 352 L 902 332 L 816 332 L 816 665 L 846 665 L 846 680 L 760 680 L 760 665 L 790 665 L 790 332 L 693 332 L 693 352 L 680 352 Z" fill="url(#goldLuxe)"/>
+    </g>
+
+  </g>
+</svg>

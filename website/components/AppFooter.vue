@@ -10,8 +10,11 @@
         
         <!-- Left: Brand Statement -->
         <div class="sm:col-span-2 md:col-span-6 space-y-3 sm:space-y-4 stagger-item">
-          <NuxtLink to="/" class="font-serif text-2xl sm:text-3xl text-white tracking-tight block hover:text-accent-purple transition-colors">
-            Hon. Dorcas Affo-Toffey
+          <NuxtLink to="/" class="inline-flex items-center gap-3.5 group">
+            <AppLogo size="42" variant="seal" color-mode="gold" class="shrink-0 group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_2px_10px_rgba(212,175,55,0.25)]" />
+            <span class="font-serif text-2xl sm:text-3xl text-white tracking-tight block group-hover:text-accent-purple transition-colors">
+              Hon. Dorcas Affo-Toffey
+            </span>
           </NuxtLink>
           <p class="font-mono text-[10px] sm:text-xs uppercase text-accent-purple tracking-widest leading-relaxed">
             Member of Parliament, Jomoro · Deputy Minister of Transport

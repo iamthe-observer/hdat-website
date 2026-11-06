@@ -1,0 +1,42 @@
+<svg width="800" height="700" viewBox="200 100 800 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+      <linearGradient id="goldTrans" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#FFFDF0"/>
+        <stop offset="15%" stop-color="#F5D77F"/>
+        <stop offset="35%" stop-color="#D4AF37"/>
+        <stop offset="65%" stop-color="#996515"/>
+        <stop offset="85%" stop-color="#E5C158"/>
+        <stop offset="100%" stop-color="#FFF5D2"/>
+      </linearGradient>
+    
+  </defs>
+
+  <g id="dat-monogram">
+    <!-- Ministerial Star of Ghana Crest -->
+    <g transform="translate(600, 140)">
+      <polygon points="0,-24 6,-7 24,-7 10,4 15,22 0,11 -15,22 -10,4 -24,-7 -6,-7" fill="url(#goldTrans)"/>
+      <circle cx="0" cy="0" r="2.5" fill="#FFFFFF"/>
+    </g>
+
+    <!-- 1. LETTER "D" -->
+    <!-- D Vertical Spine with Roman Serifs -->
+    <path d="M 285 315 L 345 315 L 345 665 L 285 665 L 285 680 L 395 680 L 395 665 L 365 665 L 365 330 L 395 330 L 395 315 L 285 315 Z" fill="url(#goldTrans)"/>
+    <!-- D Classical Bow -->
+    <path d="M 365 315 C 490 315, 530 390, 530 495 C 530 600, 490 680, 365 680 L 365 655 C 465 655, 498 585, 498 495 C 498 405, 465 340, 365 340 Z" fill="url(#goldTrans)"/>
+
+    <!-- 2. LETTER "A" -->
+    <!-- A Slender Left Diagonal Hairline -->
+    <polygon points="595,232 600,210 605,232 460,680 436,680" fill="url(#goldTrans)"/>
+    <!-- A Bold Right Diagonal Stem -->
+    <polygon points="590,210 626,210 758,665 788,665 788,680 710,680 710,665 730,665 636,320 590,210" fill="url(#goldTrans)"/>
+    <!-- A Apex Finial -->
+    <path d="M 574 210 L 626 210 L 600 192 Z" fill="url(#goldTrans)"/>
+    <!-- A Crossbar -->
+    <rect x="475" y="525" width="220" height="15" rx="1.5" fill="url(#goldTrans)"/>
+
+    <!-- 3. LETTER "T" -->
+    <!-- T Lintel and Column -->
+    <path d="M 680 315 L 915 315 L 915 352 L 902 352 L 902 332 L 816 332 L 816 665 L 846 665 L 846 680 L 760 680 L 760 665 L 790 665 L 790 332 L 693 332 L 693 352 L 680 352 Z" fill="url(#goldTrans)"/>
+  </g>
+</svg>
